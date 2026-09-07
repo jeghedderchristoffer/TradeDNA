@@ -1,623 +1,411 @@
 Account,Name,Currency,E/D,Deposit,Withdraw,Type,Note,Product
-ACCT0001,Sample Trader,USD,06/30/2025,4500,0,Banking,Wire In,Equities
+ACCT0001,Sample Trader,USD,06/30/2025,5000,0,Banking,Wire In,Equities
 ACCT0001,Sample Trader,USD,06/30/2025,0,15,Banking,Wire In Fee,Equities
 ACCT0001,Sample Trader,USD,07/01/2025,0,59,Software & Data,ZeroPro,Equities
-ACCT0001,Sample Trader,USD,07/02/2025,0,8,Locate Fees,Locate 400 MOGO @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,07/02/2025,0.6,0,Locate Fees,Locate credit 100 MOGO @ 0.006 per share,Equities
-ACCT0001,Sample Trader,USD,07/02/2025,0.6,0,Locate Fees,Locate credit 100 MOGO @ 0.006 per share,Equities
-ACCT0001,Sample Trader,USD,07/02/2025,0.6,0,Locate Fees,Locate credit 100 MOGO @ 0.006 per share,Equities
-ACCT0001,Sample Trader,USD,07/03/2025,0,1.5,Locate Fees,Locate 200 MINM @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,07/08/2025,0,3.2,Locate Fees,Locate 800 SQNS @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,07/09/2025,0,1.8,Locate Fees,Locate 300 SOBR @ 0.006 per share,Equities
-ACCT0001,Sample Trader,USD,07/09/2025,0,1.8,Locate Fees,Locate 200 EVOK @ 0.009 per share,Equities
-ACCT0001,Sample Trader,USD,07/09/2025,2.4,0,Locate Fees,Locate credit 200 EVOK @ 0.012 per share,Equities
-ACCT0001,Sample Trader,USD,07/09/2025,0.9,0,Locate Fees,Locate credit 200 SOBR @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,07/09/2025,0.45,0,Locate Fees,Locate credit 100 SOBR @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,07/10/2025,0,4.2,Locate Fees,Locate 100 STKH @ 0.042 per share,Equities
-ACCT0001,Sample Trader,USD,07/10/2025,0,1.2,Locate Fees,Locate 300 BTCM @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,07/10/2025,1.8,0,Locate Fees,Locate credit 300 BTCM @ 0.006 per share,Equities
-ACCT0001,Sample Trader,USD,07/10/2025,0.56,0,Locate Fees,Locate credit 100 STKH @ 0.00564 per share,Equities
-ACCT0001,Sample Trader,USD,07/11/2025,0,2,Locate Fees,Locate 500 FTFT @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,07/11/2025,0,1.2,Locate Fees,Locate 300 LMFA @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,07/11/2025,0,2.35,Locate Fees,Locate 500 ABVE @ 0.0047 per share,Equities
-ACCT0001,Sample Trader,USD,07/11/2025,0,3.75,Locate Fees,Locate 500 SGN @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,07/11/2025,0.28,0,Locate Fees,Locate credit 200 ABVE @ 0.00141 per share,Equities
-ACCT0001,Sample Trader,USD,07/11/2025,0.28,0,Locate Fees,Locate credit 200 ABVE @ 0.00141 per share,Equities
-ACCT0001,Sample Trader,USD,07/11/2025,0.14,0,Locate Fees,Locate credit 100 ABVE @ 0.00141 per share,Equities
-ACCT0001,Sample Trader,USD,07/11/2025,0.3,0,Locate Fees,Locate credit 100 FTFT @ 0.003 per share,Equities
-ACCT0001,Sample Trader,USD,07/11/2025,0.3,0,Locate Fees,Locate credit 100 FTFT @ 0.003 per share,Equities
-ACCT0001,Sample Trader,USD,07/11/2025,0.3,0,Locate Fees,Locate credit 100 FTFT @ 0.003 per share,Equities
-ACCT0001,Sample Trader,USD,07/11/2025,0.3,0,Locate Fees,Locate credit 100 FTFT @ 0.003 per share,Equities
-ACCT0001,Sample Trader,USD,07/11/2025,0.3,0,Locate Fees,Locate credit 100 FTFT @ 0.003 per share,Equities
-ACCT0001,Sample Trader,USD,07/11/2025,0.12,0,Locate Fees,Locate credit 100 SGN @ 0.0012 per share,Equities
-ACCT0001,Sample Trader,USD,07/11/2025,0.48,0,Locate Fees,Locate credit 400 SGN @ 0.0012 per share,Equities
-ACCT0001,Sample Trader,USD,07/14/2025,0,2.25,Locate Fees,Locate 300 YHC @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,07/14/2025,0,0.4,Locate Fees,Locate 100 SQFT @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,07/14/2025,0,0.75,Locate Fees,Locate 100 ALBT @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,07/14/2025,0,0.75,Locate Fees,Locate 100 ALBT @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,07/14/2025,0,1.2,Locate Fees,Locate 200 DARE @ 0.006 per share,Equities
-ACCT0001,Sample Trader,USD,07/15/2025,0,7.5,Locate Fees,Locate 100 XAGE @ 0.075 per share,Equities
-ACCT0001,Sample Trader,USD,07/15/2025,0,3.2,Locate Fees,Locate 800 GRO @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,07/15/2025,0,5.63,Locate Fees,Locate 100 XAGE @ 0.0563 per share,Equities
-ACCT0001,Sample Trader,USD,07/16/2025,0,4,Locate Fees,Locate 1000 GAME @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,07/16/2025,0,2,Locate Fees,Locate 500 DTST @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,07/17/2025,0,1.72,Locate Fees,Locate 200 BSLK @ 0.0086 per share,Equities
-ACCT0001,Sample Trader,USD,07/17/2025,0,2.58,Locate Fees,Locate 300 BSLK @ 0.0086 per share,Equities
-ACCT0001,Sample Trader,USD,07/18/2025,0,2.8,Locate Fees,Locate 700 TELO @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,07/18/2025,0,0.6,Locate Fees,Locate 100 TELO @ 0.006 per share,Equities
-ACCT0001,Sample Trader,USD,07/18/2025,0,4,Locate Fees,Locate 1000 UAVS @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,07/21/2025,0,3.51,Locate Fees,Locate 100 GCTK @ 0.0351 per share,Equities
-ACCT0001,Sample Trader,USD,07/21/2025,0,3.45,Locate Fees,Locate 100 GCTK @ 0.0345 per share,Equities
-ACCT0001,Sample Trader,USD,07/21/2025,0,5,Locate Fees,Locate 500 SABS @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,07/22/2025,0,11.88,Locate Fees,Locate 200 IVF @ 0.0594 per share,Equities
-ACCT0001,Sample Trader,USD,07/22/2025,0,7.5,Locate Fees,Locate 200 IVF @ 0.0375 per share,Equities
-ACCT0001,Sample Trader,USD,07/23/2025,0,2.4,Locate Fees,Locate 600 OFAL @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,07/23/2025,0,3.6,Locate Fees,Locate 600 ANEB @ 0.006 per share,Equities
-ACCT0001,Sample Trader,USD,07/23/2025,0,4.5,Locate Fees,Locate 1000 AMOD @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,07/24/2025,0,3.2,Locate Fees,Locate 800 LIDR @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,07/25/2025,0,6,Locate Fees,Locate 1000 OCTO @ 0.006 per share,Equities
-ACCT0001,Sample Trader,USD,07/25/2025,0,8.55,Locate Fees,Locate 500 MCVT @ 0.0171 per share,Equities
-ACCT0001,Sample Trader,USD,07/28/2025,0,2.65,Locate Fees,Locate 500 VWAV @ 0.0053 per share,Equities
-ACCT0001,Sample Trader,USD,07/28/2025,0,0.66,Locate Fees,Locate 100 CRVO @ 0.0066 per share,Equities
-ACCT0001,Sample Trader,USD,07/29/2025,0,3.2,Locate Fees,Locate 800 SOAR @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,07/29/2025,0,1.6,Locate Fees,Locate 400 AEHL @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,07/30/2025,0,16.8,Locate Fees,Locate 200 BGLC @ 0.084 per share,Equities
-ACCT0001,Sample Trader,USD,07/30/2025,0,1.6,Locate Fees,Locate 400 REPL @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,07/30/2025,0.48,0,Locate Fees,Locate credit 400 REPL @ 0.0012 per share,Equities
-ACCT0001,Sample Trader,USD,07/31/2025,0,7.5,Locate Fees,Locate 1000 SNGX @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,07/31/2025,0,8.55,Locate Fees,Locate 300 PBM @ 0.0285 per share,Equities
+ACCT0001,Sample Trader,USD,07/01/2025,0,0.4,Locate Fees,Locate 100 JAGX @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,07/01/2025,0.12,0,Locate Fees,Locate credit 100 JAGX @ 0.0012 per share,Equities
+ACCT0001,Sample Trader,USD,07/01/2025,0,0.6,Locate Fees,Locate 300 BRTX @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,07/01/2025,0,2.4,Locate Fees,Locate 200 KTTA @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,07/03/2025,0,2,Locate Fees,Locate 200 ACRN @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,07/03/2025,0,2,Locate Fees,Single-Use 500 LIPO @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,07/07/2025,0,3,Locate Fees,Single-Use 500 LUCY @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,07/07/2025,0,5,Locate Fees,Locate 500 BOLT @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,07/07/2025,0.93,0,Locate Fees,Locate credit 150 BOLT @ 0.0062 per share,Equities
+ACCT0001,Sample Trader,USD,07/07/2025,0,1.2,Locate Fees,Locate 300 TIRX @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,07/07/2025,0,1.5,Locate Fees,Locate 200 RELI @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,07/09/2025,0,0.4,Locate Fees,Locate 200 BNZI @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,07/09/2025,0,1,Locate Fees,Locate 500 SINT @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,07/14/2025,0,1,Locate Fees,Locate 100 LIPO @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,07/16/2025,0,2,Locate Fees,Locate 500 OCEA @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,07/18/2025,0,0.6,Locate Fees,Locate 200 UPXI @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,07/23/2025,0,1,Locate Fees,Locate 100 PIXY @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,07/23/2025,0.31,0,Locate Fees,62% Locate CreditLocate 50 PIXY @ 0.0062 per share,Equities
+ACCT0001,Sample Trader,USD,07/24/2025,0,0.4,Locate Fees,Locate 100 PALI @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,07/24/2025,0,0.4,Locate Fees,Locate 200 DATS @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,07/24/2025,0,3,Locate Fees,Locate 500 LUCY @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,07/24/2025,0,0.4,Locate Fees,Locate 200 ARQT @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,07/28/2025,0,1.5,Locate Fees,Locate 200 VERB @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,07/28/2025,0,0.75,Locate Fees,Locate 100 MTNB @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,07/28/2025,0,1.5,Locate Fees,Locate 500 TNON @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,07/30/2025,0,4.86,Locate & Borrow Charge,ONB 200 VERB ($0.0243) for 07/28,Equities
+ACCT0001,Sample Trader,USD,07/30/2025,0,0.2,Locate Fees,Locate 100 WISA @ 0.002 per share,Equities
 ACCT0001,Sample Trader,USD,08/01/2025,0,59,Software & Data,ZeroPro,Equities
-ACCT0001,Sample Trader,USD,08/01/2025,0,17.55,Locate Fees,Locate 300 NAMM @ 0.0585 per share,Equities
-ACCT0001,Sample Trader,USD,08/05/2025,0,2,Locate Fees,Locate 500 SMXT @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,08/05/2025,0,2,Locate Fees,Locate 500 SMXT @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,08/05/2025,3,0,Locate Fees,Locate credit 1000 SMXT @ 0.003 per share,Equities
-ACCT0001,Sample Trader,USD,08/06/2025,0,16.8,Locate Fees,Locate 500 AIMD @ 0.0336 per share,Equities
-ACCT0001,Sample Trader,USD,08/06/2025,0,3.36,Locate Fees,Locate 100 AIMD @ 0.0336 per share,Equities
-ACCT0001,Sample Trader,USD,08/06/2025,0,19.28,Locate Fees,Locate 200 AIMD @ 0.0964 per share,Equities
-ACCT0001,Sample Trader,USD,08/06/2025,0,1.2,Locate Fees,Locate 200 AIMD @ 0.006 per share,Equities
-ACCT0001,Sample Trader,USD,08/06/2025,8.68,0,Locate Fees,Locate credit 300 AIMD @ 0.02892 per share,Equities
-ACCT0001,Sample Trader,USD,08/06/2025,2.89,0,Locate Fees,Locate credit 100 AIMD @ 0.02892 per share,Equities
-ACCT0001,Sample Trader,USD,08/06/2025,2.89,0,Locate Fees,Locate credit 100 AIMD @ 0.02892 per share,Equities
-ACCT0001,Sample Trader,USD,08/06/2025,2.89,0,Locate Fees,Locate credit 100 AIMD @ 0.02892 per share,Equities
-ACCT0001,Sample Trader,USD,08/06/2025,5.78,0,Locate Fees,Locate credit 200 AIMD @ 0.02892 per share,Equities
-ACCT0001,Sample Trader,USD,08/06/2025,5.78,0,Locate Fees,Locate credit 200 AIMD @ 0.02892 per share,Equities
-ACCT0001,Sample Trader,USD,08/07/2025,0,4,Locate Fees,Locate 200 CMCT @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,08/07/2025,0,2,Locate Fees,Locate 100 CMCT @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,08/07/2025,0,2,Locate Fees,Locate 500 CREG @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,08/08/2025,0,0.8,Locate Fees,Locate 200 SPRU @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,08/11/2025,0,10.5,Locate Fees,Locate 300 AUUD @ 0.035 per share,Equities
-ACCT0001,Sample Trader,USD,08/11/2025,0,10.53,Locate Fees,Locate 300 AUUD @ 0.0351 per share,Equities
-ACCT0001,Sample Trader,USD,08/12/2025,0,3,Locate Fees,Locate 400 ZENA @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,08/13/2025,0,2.26,Locate Fees,Locate 200 BSLK @ 0.0113 per share,Equities
-ACCT0001,Sample Trader,USD,08/13/2025,0,3.75,Locate Fees,Locate 500 MNTS @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,08/13/2025,0,4,Locate Fees,Locate 500 MNTS @ 0.008 per share,Equities
-ACCT0001,Sample Trader,USD,08/14/2025,0,3.75,Locate Fees,Locate 500 XPON @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,08/14/2025,0,2.4,Locate Fees,Locate 400 BMRA @ 0.006 per share,Equities
-ACCT0001,Sample Trader,USD,08/15/2025,0,1,Locate Fees,Locate 100 PPSI @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,08/15/2025,0,0.42,Locate & Borrow Charge,ONB 60 PPSI ($0.00417) for 08/15,Equities
-ACCT0001,Sample Trader,USD,08/18/2025,0,0.4,Locate Fees,Locate 100 BTAI @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,08/18/2025,0,2.5,Locate Fees,Single-Use 100 SNGX @ 0.025 per share,Equities
-ACCT0001,Sample Trader,USD,08/19/2025,0,1.79,Locate Fees,Locate 100 LASE @ 0.0179 per share,Equities
-ACCT0001,Sample Trader,USD,08/19/2025,0,3.27,Locate & Borrow Charge,ONB 43 LASE ($0.03267) for 08/19,Equities
-ACCT0001,Sample Trader,USD,08/20/2025,0,0.75,Locate Fees,Locate 100 PPCB @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,08/21/2025,0,1,Locate Fees,Locate 100 APM @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,08/26/2025,0,0.4,Locate Fees,Locate 100 AIFF @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,08/26/2025,0,0.4,Locate Fees,Locate 100 AIFF @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,08/26/2025,0,0.4,Locate Fees,Locate 100 AIFF @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,08/26/2025,0,0.8,Locate Fees,Locate 200 OPAD @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,08/27/2025,0,0.4,Locate Fees,Locate 100 DSS @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,08/27/2025,0,0.75,Locate Fees,Locate 100 NBY @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,08/27/2025,0,0.4,Locate Fees,Locate 100 FLNT @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,08/27/2025,0,0.4,Locate Fees,Locate 100 RMTI @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,08/27/2025,0,5.62,Locate & Borrow Charge,ONB 100 NBY ($0.05619) for 08/27,Equities
-ACCT0001,Sample Trader,USD,08/27/2025,0,0.25,Locate & Borrow Charge,ONB 67 FLNT ($0.0025) for 08/27,Equities
-ACCT0001,Sample Trader,USD,08/28/2025,0,0.4,Locate Fees,Locate 100 TELO @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,08/29/2025,0,3,Locate Fees,Locate 100 GMHS @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,08/29/2025,0,2.1,Locate Fees,Locate 200 MOVE @ 0.0105 per share,Equities
-ACCT0001,Sample Trader,USD,08/29/2025,0,0.71,Locate Fees,Locate 100 NUKK @ 0.0071 per share,Equities
+ACCT0001,Sample Trader,USD,08/01/2025,0,0.08,Locate & Borrow Charge,ONB 100 MTNB ($0.0008) for 07/28,Equities
+ACCT0001,Sample Trader,USD,08/07/2025,0,0.8,Locate Fees,Locate 200 RELI @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,08/07/2025,0,0.6,Locate Fees,Locate 100 JAGX @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,08/07/2025,0.19,0,Locate Fees,Locate credit 50 JAGX @ 0.0037 per share,Equities
+ACCT0001,Sample Trader,USD,08/11/2025,0,3,Locate Fees,Locate 500 LUCY @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,08/12/2025,0,0.8,Locate Fees,Locate 200 TNON @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,08/12/2025,0,2,Locate Fees,Locate 100 TIRX @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,08/13/2025,0,0.6,Locate Fees,Locate 200 NAOV @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,08/18/2025,0,1.2,Locate Fees,Single-Use 300 SINT @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,08/18/2025,0,10,Locate Fees,Locate 500 YOSH @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,08/18/2025,6.2,0,Locate Fees,Locate credit 500 YOSH @ 0.0124 per share,Equities
+ACCT0001,Sample Trader,USD,08/18/2025,0,1.5,Locate Fees,Locate 500 LIPO @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,08/20/2025,0,10,Locate Fees,Locate 500 DATS @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,08/20/2025,0,4,Locate Fees,Locate 200 PRFX @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,08/20/2025,2,0,Locate Fees,Locate credit 200 PRFX @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,08/20/2025,0,1,Locate Fees,Locate 100 ZVSA @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,08/20/2025,0,2,Locate Fees,Locate 500 UPXI @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,08/21/2025,0,0.4,Locate Fees,Locate 200 INAB @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,08/22/2025,0,0.6,Locate Fees,Locate 300 NVOS @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,08/22/2025,0.3,0,Locate Fees,Locate credit 300 NVOS @ 0.001 per share,Equities
+ACCT0001,Sample Trader,USD,08/25/2025,0,0.8,Locate Fees,Locate 200 INAB @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,08/29/2025,0,0.3,Locate Fees,Locate 100 JZXN @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,08/29/2025,0,0.4,Locate Fees,Locate 100 MGOL @ 0.004 per share,Equities
 ACCT0001,Sample Trader,USD,09/01/2025,0,59,Software & Data,ZeroPro,Equities
-ACCT0001,Sample Trader,USD,09/02/2025,0,0.4,Locate Fees,Locate 100 UUU @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,09/02/2025,0,0.4,Locate Fees,Locate 100 UUU @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,09/02/2025,0,2.1,Locate Fees,Locate 100 SSKN @ 0.021 per share,Equities
-ACCT0001,Sample Trader,USD,09/02/2025,0,2.1,Locate Fees,Locate 100 SSKN @ 0.021 per share,Equities
-ACCT0001,Sample Trader,USD,09/03/2025,0,0.8,Locate Fees,Locate 200 GEG @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,09/03/2025,0,3.57,Locate Fees,Locate 100 SINT @ 0.0357 per share,Equities
-ACCT0001,Sample Trader,USD,09/03/2025,0,13.5,Locate Fees,Locate 200 BTBD @ 0.0675 per share,Equities
-ACCT0001,Sample Trader,USD,09/03/2025,0,0.4,Locate Fees,Locate 100 LPTH @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,09/03/2025,0,0.8,Locate Fees,Locate 200 JEM @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,09/04/2025,0,6.75,Locate Fees,Locate 100 BRIA @ 0.0675 per share,Equities
-ACCT0001,Sample Trader,USD,09/04/2025,0,6.75,Locate Fees,Locate 100 BRIA @ 0.0675 per share,Equities
-ACCT0001,Sample Trader,USD,09/05/2025,0,9.45,Locate Fees,Locate 300 VEEE @ 0.0315 per share,Equities
-ACCT0001,Sample Trader,USD,09/05/2025,0,6.3,Locate Fees,Locate 200 SCAG @ 0.0315 per share,Equities
-ACCT0001,Sample Trader,USD,09/08/2025,0,2.94,Locate Fees,Locate 100 OCTO @ 0.0294 per share,Equities
-ACCT0001,Sample Trader,USD,09/08/2025,0,1,Locate Fees,Locate 100 RAPP @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,09/08/2025,0,9,Locate Fees,Locate 300 XAIR @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,09/08/2025,0,0.9,Locate Fees,Locate 200 DUO @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,09/08/2025,0,0.8,Locate Fees,Locate 200 LDI @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,09/08/2025,0,2.55,Locate Fees,Locate 100 MCRB @ 0.0255 per share,Equities
-ACCT0001,Sample Trader,USD,09/09/2025,0,0.4,Locate Fees,Locate 100 MMA @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,09/09/2025,0,2.78,Locate Fees,Locate 100 ZONE @ 0.0278 per share,Equities
-ACCT0001,Sample Trader,USD,09/09/2025,0,0.4,Locate Fees,Locate 100 TRML @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,09/09/2025,0,0.8,Locate Fees,Locate 200 STEC @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,09/09/2025,0,0.63,Locate Fees,Single-Use 100 QMMM @ 0.0063 per share,Equities
-ACCT0001,Sample Trader,USD,09/09/2025,0,0.8,Locate Fees,Locate 200 GIBO @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,09/09/2025,0,20,Locate Fees,Locate 200 YOUL @ 0.1 per share,Equities
-ACCT0001,Sample Trader,USD,09/09/2025,3,0,Locate Fees,Locate credit 200 YOUL @ 0.015 per share,Equities
-ACCT0001,Sample Trader,USD,09/10/2025,0,1.2,Locate Fees,Locate 100 AEHL @ 0.012 per share,Equities
-ACCT0001,Sample Trader,USD,09/10/2025,0,2.5,Locate Fees,Single-Use 100 ASST @ 0.025 per share,Equities
-ACCT0001,Sample Trader,USD,09/10/2025,0,3.41,Locate Fees,Locate 100 CAMP @ 0.0341 per share,Equities
-ACCT0001,Sample Trader,USD,09/10/2025,0,10,Locate Fees,Locate 100 WLDS @ 0.1 per share,Equities
-ACCT0001,Sample Trader,USD,09/10/2025,0,0.4,Locate Fees,Locate 100 RBNE @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,09/10/2025,0,7.38,Locate & Borrow Charge,ONB 100 CAMP ($0.0738) for 09/10,Equities
-ACCT0001,Sample Trader,USD,09/10/2025,0,62.22,Locate & Borrow Charge,ONB 28 ASST ($0.6222) for 09/10,Equities
-ACCT0001,Sample Trader,USD,09/10/2025,0,36.26,Locate & Borrow Charge,ONB 36 AEHL ($0.36257) for 09/10,Equities
-ACCT0001,Sample Trader,USD,09/10/2025,0,8.39,Locate & Borrow Charge,ONB 80 RBNE ($0.08383) for 09/10,Equities
-ACCT0001,Sample Trader,USD,09/11/2025,0,2.6,Locate Fees,Locate 100 VNCE @ 0.026 per share,Equities
-ACCT0001,Sample Trader,USD,09/11/2025,0,0.4,Locate Fees,Locate 100 MOGU @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,09/11/2025,0,1.49,Locate Fees,Locate 100 TRNR @ 0.0149 per share,Equities
-ACCT0001,Sample Trader,USD,09/11/2025,0,2.37,Locate Fees,Locate 100 AMST @ 0.0237 per share,Equities
-ACCT0001,Sample Trader,USD,09/11/2025,0,0.4,Locate Fees,Locate 100 MAZE @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,09/12/2025,0,3,Locate Fees,Locate 100 HCWB @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,09/12/2025,0,8,Locate Fees,Locate 100 GCTK @ 0.08 per share,Equities
-ACCT0001,Sample Trader,USD,09/12/2025,0,1,Locate Fees,Locate 100 COCP @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,09/15/2025,0,3.15,Locate Fees,Locate 100 HSDT @ 0.0315 per share,Equities
-ACCT0001,Sample Trader,USD,09/15/2025,0,2.38,Locate Fees,Locate 100 CHEK @ 0.0238 per share,Equities
-ACCT0001,Sample Trader,USD,09/15/2025,0,4.05,Locate Fees,Locate 100 NAOV @ 0.0405 per share,Equities
-ACCT0001,Sample Trader,USD,09/15/2025,0,3,Locate Fees,Locate 100 IHT @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,09/15/2025,0,0.4,Locate Fees,Locate 100 GLUE @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,09/16/2025,0,1.49,Locate Fees,Locate 100 AIHS @ 0.0149 per share,Equities
-ACCT0001,Sample Trader,USD,09/16/2025,0,1.49,Locate Fees,Locate 100 CNFR @ 0.0149 per share,Equities
-ACCT0001,Sample Trader,USD,09/16/2025,0,2,Locate Fees,Locate 100 APVO @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,09/17/2025,0,8.17,Locate Fees,Locate 100 SPRC @ 0.0817 per share,Equities
-ACCT0001,Sample Trader,USD,09/17/2025,0,0.75,Locate Fees,Locate 100 HIND @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,09/17/2025,0,0.75,Locate Fees,Locate 100 IPM @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,09/17/2025,0,0.4,Locate Fees,Locate 100 NFE @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,09/17/2025,0,0.75,Locate Fees,Locate 100 SQFT @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,09/17/2025,0,0.75,Locate Fees,Locate 100 CWD @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,09/18/2025,0,0.4,Locate Fees,Locate 100 ETNB @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,09/18/2025,0,1,Locate Fees,Locate 100 APVO @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,09/18/2025,0,1,Locate Fees,Locate 100 LASE @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,09/18/2025,0,1,Locate Fees,Locate 100 APVO @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,09/19/2025,0,11.7,Locate Fees,Locate 100 AGMH @ 0.117 per share,Equities
-ACCT0001,Sample Trader,USD,09/19/2025,0,3.6,Locate Fees,Locate 100 YDKG @ 0.036 per share,Equities
-ACCT0001,Sample Trader,USD,09/22/2025,0,3,Locate Fees,Locate 100 AGRI @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,09/22/2025,0,3.75,Locate Fees,Locate 100 QLGN @ 0.0375 per share,Equities
-ACCT0001,Sample Trader,USD,09/22/2025,0,0.4,Locate Fees,Locate 100 MBX @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,09/22/2025,0,0.4,Locate Fees,Locate 100 HOUS @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,09/22/2025,0,0.4,Locate Fees,Locate 100 MTSR @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,09/22/2025,0,10,Locate Fees,Locate 100 FLGC @ 0.1 per share,Equities
-ACCT0001,Sample Trader,USD,09/22/2025,0,0.06,Locate & Borrow Charge,ONB 16 MBX ($-0.00058) for 09/22,Equities
-ACCT0001,Sample Trader,USD,09/22/2025,0,0.47,Locate & Borrow Charge,ONB 33 HOUS ($-0.0047) for 09/22,Equities
-ACCT0001,Sample Trader,USD,09/23/2025,0,3.75,Locate Fees,Locate 100 SSKN @ 0.0375 per share,Equities
-ACCT0001,Sample Trader,USD,09/23/2025,0,1.2,Locate Fees,Locate 100 GLTO @ 0.012 per share,Equities
-ACCT0001,Sample Trader,USD,09/23/2025,0,6.19,Locate Fees,Single-Use 100 IPDN @ 0.0619 per share,Equities
-ACCT0001,Sample Trader,USD,09/23/2025,0,15,Locate Fees,Locate 100 SLE @ 0.15 per share,Equities
-ACCT0001,Sample Trader,USD,09/23/2025,0,0.4,Locate Fees,Locate 100 FTEL @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,09/24/2025,0,9.15,Locate Fees,Locate 100 SHFS @ 0.0915 per share,Equities
-ACCT0001,Sample Trader,USD,09/24/2025,0,0.4,Locate Fees,Locate 100 QURE @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,09/24/2025,0,1,Locate Fees,Locate 100 LAC @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,09/25/2025,0,1,Locate Fees,Locate 100 PEPG @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,09/25/2025,0,11.88,Locate Fees,Single-Use 100 SPRC @ 0.1188 per share,Equities
-ACCT0001,Sample Trader,USD,09/26/2025,0,2.25,Locate Fees,Locate 100 MRM @ 0.0225 per share,Equities
-ACCT0001,Sample Trader,USD,09/26/2025,0,4.65,Locate Fees,Locate 100 WAI @ 0.0465 per share,Equities
-ACCT0001,Sample Trader,USD,09/26/2025,0,21.13,Locate & Borrow Charge,ONB 75 WAI ($-0.21126) for 09/26,Equities
-ACCT0001,Sample Trader,USD,09/26/2025,0,11.31,Locate & Borrow Charge,ONB 88 MRM ($-0.11305) for 09/26,Equities
-ACCT0001,Sample Trader,USD,09/29/2025,0,4.65,Locate Fees,Locate 100 JFB @ 0.0465 per share,Equities
-ACCT0001,Sample Trader,USD,09/29/2025,0,1.51,Locate Fees,Locate 100 POAI @ 0.0151 per share,Equities
-ACCT0001,Sample Trader,USD,09/29/2025,0,1,Locate Fees,Locate 100 ZURA @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,09/29/2025,0,15,Locate Fees,Locate 100 MSS @ 0.15 per share,Equities
-ACCT0001,Sample Trader,USD,09/29/2025,0,1,Locate Fees,Locate 100 DWTX @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,09/02/2025,0,3.6,Locate Fees,Locate 300 HUBC @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,09/05/2025,0,2.4,Locate Fees,Locate 200 ONFO @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,09/05/2025,0,1.5,Locate Fees,Locate 500 ACRN @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,09/08/2025,0,1.2,Locate Fees,Locate 300 ENSC @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,09/08/2025,0,1.2,Locate Fees,Locate 300 ONFO @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,09/08/2025,0,0.6,Locate Fees,Locate 300 ZVSA @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,09/10/2025,0,11.25,Locate Fees,Locate 1500 BRTX @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,09/10/2025,0,10,Locate Fees,Single-Use 1000 ENSC @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,09/11/2025,0,6,Locate Fees,Locate 500 ZVSA @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,09/11/2025,0,6,Locate Fees,Locate 300 AVGR @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,09/11/2025,0,3,Locate Fees,Locate 500 JAGX @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,09/12/2025,0,1,Locate Fees,Locate 500 JAGX @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,09/16/2025,0,5,Locate Fees,Locate 500 BCTX @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,09/16/2025,0,1.2,Locate Fees,Locate 100 WISA @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,09/23/2025,0,20,Locate Fees,Locate 1000 LUCY @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,09/23/2025,0,3,Locate Fees,Single-Use 300 MLGO @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,09/23/2025,0,1,Locate Fees,Locate 500 RVSN @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,09/23/2025,0,4,Locate Fees,Locate 1000 HOTH @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,09/23/2025,0,3.6,Locate Fees,Locate 300 ICCT @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,09/26/2025,0,10,Locate Fees,Locate 1000 AMPX @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,09/29/2025,0,4,Locate Fees,Locate 200 GNPX @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,09/29/2025,2.48,0,Locate Fees,Locate credit 200 GNPX @ 0.0124 per share,Equities
+ACCT0001,Sample Trader,USD,09/29/2025,0,1.2,Locate Fees,Locate 300 ICCT @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,09/30/2025,0,0.75,Locate Fees,Single-Use 100 SINT @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,09/30/2025,0,0.4,Locate Fees,Locate 200 SXTC @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,09/30/2025,0,0.6,Locate Fees,Locate 100 YOSH @ 0.006 per share,Equities
 ACCT0001,Sample Trader,USD,10/01/2025,0,59,Software & Data,ZeroPro,Equities
-ACCT0001,Sample Trader,USD,10/02/2025,0,12.15,Locate Fees,Locate 100 CIGL @ 0.1215 per share,Equities
-ACCT0001,Sample Trader,USD,10/06/2025,0,0.4,Locate Fees,Locate 100 CRML @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,10/06/2025,0,3,Locate Fees,Locate 100 SOPA @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,10/06/2025,0,10,Locate Fees,Locate 100 SPRB @ 0.1 per share,Equities
-ACCT0001,Sample Trader,USD,10/06/2025,0,3,Locate Fees,Locate 100 SOPA @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,10/07/2025,0,0.4,Locate Fees,Locate 100 TMQ @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,10/07/2025,0,3.15,Locate Fees,Locate 100 ULY @ 0.0315 per share,Equities
-ACCT0001,Sample Trader,USD,10/07/2025,0,8.4,Locate Fees,Locate 100 CISS @ 0.084 per share,Equities
-ACCT0001,Sample Trader,USD,10/07/2025,0,0.31,Locate & Borrow Charge,ONB 50 TMQ ($-0.00307) for 10/07,Equities
-ACCT0001,Sample Trader,USD,10/07/2025,0,2.49,Locate & Borrow Charge,ONB 68 ULY ($-0.02487) for 10/07,Equities
-ACCT0001,Sample Trader,USD,10/08/2025,0,4.8,Locate Fees,Locate 100 XBIO @ 0.048 per share,Equities
-ACCT0001,Sample Trader,USD,10/08/2025,0,3.6,Locate Fees,Locate 100 ACXP @ 0.036 per share,Equities
-ACCT0001,Sample Trader,USD,10/08/2025,0,8.4,Locate Fees,Locate 100 ATON @ 0.084 per share,Equities
-ACCT0001,Sample Trader,USD,10/08/2025,0,7.5,Locate Fees,Locate 100 RNAZ @ 0.075 per share,Equities
-ACCT0001,Sample Trader,USD,10/09/2025,0,10.32,Locate Fees,Locate 100 BJDX @ 0.1032 per share,Equities
-ACCT0001,Sample Trader,USD,10/10/2025,0,0.42,Locate Fees,Locate 100 GWH @ 0.0042 per share,Equities
-ACCT0001,Sample Trader,USD,10/10/2025,0,1,Locate Fees,Locate 100 GWH @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,10/10/2025,0,3.12,Locate Fees,Locate 100 QNRX @ 0.0312 per share,Equities
-ACCT0001,Sample Trader,USD,10/13/2025,0,12,Locate Fees,Locate 100 PMAX @ 0.12 per share,Equities
-ACCT0001,Sample Trader,USD,10/13/2025,0,0.96,Locate & Borrow Charge,ONB 90 PMAX ($-0.00957) for 10/13,Equities
-ACCT0001,Sample Trader,USD,10/14/2025,0,3.23,Locate Fees,Locate 100 GWAV @ 0.0323 per share,Equities
-ACCT0001,Sample Trader,USD,10/14/2025,0,1.5,Locate Fees,Locate 100 AQMS @ 0.015 per share,Equities
-ACCT0001,Sample Trader,USD,10/14/2025,0,13.65,Locate Fees,Locate 100 ELAB @ 0.1365 per share,Equities
-ACCT0001,Sample Trader,USD,10/14/2025,0,3,Locate Fees,Locate 100 NVA @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,10/15/2025,0,5.85,Locate Fees,Locate 100 COOT @ 0.0585 per share,Equities
-ACCT0001,Sample Trader,USD,10/15/2025,0,0.4,Locate Fees,Locate 100 OMER @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,10/15/2025,0,15.6,Locate Fees,Locate 100 PFAI @ 0.156 per share,Equities
-ACCT0001,Sample Trader,USD,10/16/2025,0,0.4,Locate Fees,Locate 100 PRAX @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,10/16/2025,0,3.42,Locate Fees,Locate 100 RYOJ @ 0.0342 per share,Equities
-ACCT0001,Sample Trader,USD,10/16/2025,0,0.4,Locate Fees,Locate 100 WHWK @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,10/16/2025,0,0.4,Locate Fees,Locate 100 WHWK @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,10/17/2025,0,2,Locate Fees,Locate 100 ARTV @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,10/17/2025,0,2,Locate Fees,Single-Use 100 ELBM @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,10/20/2025,0,1,Locate Fees,Locate 100 REPL @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,10/20/2025,0,0.4,Locate Fees,Locate 100 CELC @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,10/20/2025,0,0.4,Locate Fees,Locate 100 GSIT @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,10/20/2025,0,0.03,Locate & Borrow Charge,ONB 48 REPL ($-0.00028) for 10/20,Equities
-ACCT0001,Sample Trader,USD,10/20/2025,0,0.2,Locate & Borrow Charge,ONB 6 CELC ($-0.002) for 10/20,Equities
-ACCT0001,Sample Trader,USD,10/21/2025,0,1,Locate Fees,Locate 100 NERV @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,10/21/2025,0,11.08,Locate Fees,Locate 100 ATMV @ 0.1108 per share,Equities
-ACCT0001,Sample Trader,USD,10/21/2025,0,91.58,Locate & Borrow Charge,ONB 42 ATMV ($-0.9158) for 10/21,Equities
-ACCT0001,Sample Trader,USD,10/22/2025,0,1,Locate Fees,Single-Use 100 BYND @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,10/22/2025,0,1,Locate Fees,Locate 100 FLWS @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,10/22/2025,0,8.32,Locate Fees,Locate 100 BNBX @ 0.0832 per share,Equities
-ACCT0001,Sample Trader,USD,10/23/2025,0,1,Locate Fees,Locate 100 VTYX @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,10/23/2025,0,0.75,Locate Fees,Locate 100 IMCC @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,10/23/2025,0,0.06,Locate & Borrow Charge,ONB 71 VTYX ($-0.00019) for 10/23,Equities
-ACCT0001,Sample Trader,USD,10/24/2025,0,14.37,Locate Fees,Locate 100 GNTA @ 0.1437 per share,Equities
-ACCT0001,Sample Trader,USD,10/24/2025,0,1,Locate Fees,Locate 100 INBX @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,10/24/2025,0,4,Locate Fees,Locate 100 QLGN @ 0.04 per share,Equities
-ACCT0001,Sample Trader,USD,10/24/2025,0,0.75,Locate Fees,Locate 100 NEUP @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,10/27/2025,0,2.38,Locate Fees,Locate 100 RECT @ 0.0238 per share,Equities
-ACCT0001,Sample Trader,USD,10/27/2025,0,0.4,Locate Fees,Locate 100 DZZ @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,10/27/2025,0,0.75,Locate Fees,Locate 100 CLIK @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,10/27/2025,0,0.4,Locate Fees,Locate 100 SUPV @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,10/29/2025,0,2,Locate Fees,Locate 100 CMBM @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,10/29/2025,0,2,Locate Fees,Locate 100 ERNA @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,10/30/2025,0,1.49,Locate Fees,Locate 100 VCIG @ 0.0149 per share,Equities
-ACCT0001,Sample Trader,USD,10/30/2025,0,2,Locate Fees,Locate 100 CMBM @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,10/30/2025,0,0.75,Locate Fees,Locate 100 VCIG @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,10/30/2025,0,0.75,Locate Fees,Locate 100 CVU @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,10/30/2025,0,0.41,Locate Fees,Locate 100 CVU @ 0.0041 per share,Equities
-ACCT0001,Sample Trader,USD,10/31/2025,0,2,Locate Fees,Locate 200 GETY @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,10/31/2025,0,2,Locate Fees,Locate 200 HKD @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,10/01/2025,0,6.27,Locate & Borrow Charge,ONB 100 GNPX ($0.0627) for 09/29,Equities
+ACCT0001,Sample Trader,USD,10/01/2025,0,11.25,Locate Fees,Locate 1500 MTNB @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,10/01/2025,3.45,0,Locate Fees,Locate credit 750 MTNB @ 0.0046 per share,Equities
+ACCT0001,Sample Trader,USD,10/01/2025,0,0.8,Locate Fees,Locate 200 BRTX @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,10/01/2025,0,2.25,Locate Fees,Locate 300 NAOV @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,10/01/2025,0,2,Locate Fees,Single-Use 500 VINO @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,10/01/2025,0,1.5,Locate Fees,Locate 200 ARQT @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,10/02/2025,0,13.8,Locate Fees,Locate 2300 VERB @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,10/02/2025,0,0.9,Locate Fees,Locate 300 WISA @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,10/02/2025,0,4,Locate Fees,Locate 1000 YOSH @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,10/03/2025,0,4,Locate Fees,Single-Use 200 JZXN @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,10/03/2025,0,0.2,Locate Fees,Locate 100 BRTX @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,10/03/2025,0.03,0,Locate Fees,Locate credit 50 BRTX @ 0.0006 per share,Equities
+ACCT0001,Sample Trader,USD,10/06/2025,0,0.9,Locate Fees,Locate 300 AMPX @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,10/06/2025,0,20,Locate Fees,Locate 1000 NAOV @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,10/06/2025,0,2.25,Locate Fees,Locate 300 BCTX @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,10/06/2025,0.35,0,Locate Fees,Locate credit 150 BCTX @ 0.0023 per share,Equities
+ACCT0001,Sample Trader,USD,10/07/2025,0,0.6,Locate Fees,Locate 300 HUBC @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,10/07/2025,0,10,Locate Fees,Locate 500 INAB @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,10/09/2025,0,1.2,Locate Fees,Locate 300 MTNB @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,10/09/2025,0,0.8,Locate Fees,Locate 200 PIXY @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,10/09/2025,0,2,Locate Fees,Locate 500 ONFO @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,10/13/2025,0,4.53,Locate & Borrow Charge,ONB 300 MTNB ($0.0151) for 10/09,Equities
+ACCT0001,Sample Trader,USD,10/13/2025,0,2,Locate Fees,Locate 500 YOSH @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,10/14/2025,0,0.8,Locate Fees,Locate 200 CYCN @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,10/14/2025,0,0.8,Locate Fees,Locate 200 CNSP @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,10/16/2025,0,2,Locate Fees,Locate 200 JAGX @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,10/16/2025,0,0.6,Locate Fees,Locate 200 YOSH @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,10/16/2025,0,3,Locate Fees,Locate 300 OCEA @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,10/16/2025,0.5,0,Locate Fees,Locate credit 100 OCEA @ 0.005 per share,Equities
+ACCT0001,Sample Trader,USD,10/17/2025,0,5,Locate Fees,Locate 500 ARQT @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,10/17/2025,0,0.9,Locate Fees,Locate 300 ACRN @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,10/20/2025,0,2.25,Locate Fees,Locate 300 KTTA @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,10/20/2025,0,2.25,Locate Fees,Locate 300 AMPX @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,10/20/2025,0.57,0,Locate Fees,Locate credit 150 AMPX @ 0.0038 per share,Equities
+ACCT0001,Sample Trader,USD,10/20/2025,0,2,Locate Fees,Locate 100 TNON @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,10/22/2025,0,1,Locate Fees,Locate 500 WISA @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,10/22/2025,0,10,Locate Fees,Locate 500 UPXI @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,10/24/2025,0,12,Locate Fees,Locate 2000 ARQT @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,10/24/2025,3.6,0,Locate Fees,Locate credit 2000 ARQT @ 0.0018 per share,Equities
+ACCT0001,Sample Trader,USD,10/24/2025,0,3,Locate Fees,Locate 1500 PIXY @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,10/27/2025,0,1.2,Locate Fees,Locate 300 OCEA @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,10/27/2025,0,2,Locate Fees,Locate 200 ENSC @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,10/28/2025,0,0.75,Locate Fees,Locate 100 NCPL @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,10/28/2025,0.38,0,Locate Fees,62% Locate CreditLocate 100 NCPL @ 0.0038 per share,Equities
+ACCT0001,Sample Trader,USD,10/28/2025,0,0.2,Locate Fees,Locate 100 HOTH @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,10/28/2025,0,3.75,Locate Fees,Pre-Borrow 500 JAGX @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,10/29/2025,0,5,Locate Fees,Locate 500 VRAX @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,10/29/2025,0,0.6,Locate Fees,Locate 300 BNZI @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,10/29/2025,0,0.75,Locate Fees,Locate 100 QLGN @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,10/30/2025,0,2,Locate Fees,Locate 500 FRGT @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,10/30/2025,0,9,Locate Fees,Locate 1500 WISA @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,10/30/2025,0,11.25,Locate Fees,Locate 1500 SGBX @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,10/30/2025,3.45,0,Locate Fees,62% Locate CreditLocate 1500 SGBX @ 0.0023 per share,Equities
+ACCT0001,Sample Trader,USD,10/30/2025,0,0.6,Locate Fees,Locate 200 BNZI @ 0.003 per share,Equities
 ACCT0001,Sample Trader,USD,11/01/2025,0,59,Software & Data,ZeroPro,Equities
-ACCT0001,Sample Trader,USD,11/03/2025,0,0.4,Locate Fees,Locate 100 CRBU @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,11/03/2025,0,3,Locate Fees,Locate 100 PHIO @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,11/03/2025,0,3,Locate Fees,Locate 100 PHIO @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,11/03/2025,0,0.4,Locate Fees,Locate 100 THAR @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,11/03/2025,0,0.4,Locate Fees,Locate 100 THAR @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,11/03/2025,0,0.4,Locate Fees,Locate 100 TERN @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,11/06/2025,0,1,Locate Fees,Locate 100 STGW @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,11/06/2025,0,0.4,Locate Fees,Locate 100 FRGE @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,11/06/2025,0,4,Locate Fees,Locate 200 FTEL @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,11/07/2025,0,4.2,Locate Fees,Locate 100 MSGM @ 0.042 per share,Equities
-ACCT0001,Sample Trader,USD,11/07/2025,0,3.75,Locate Fees,Locate 100 MSGM @ 0.0375 per share,Equities
-ACCT0001,Sample Trader,USD,11/10/2025,0,3.15,Locate Fees,Locate 100 GLTO @ 0.0315 per share,Equities
-ACCT0001,Sample Trader,USD,11/10/2025,0,2.4,Locate Fees,Locate 100 MOVE @ 0.024 per share,Equities
-ACCT0001,Sample Trader,USD,11/11/2025,0,17.91,Locate Fees,Locate 100 QNRX @ 0.1791 per share,Equities
-ACCT0001,Sample Trader,USD,11/11/2025,0,0.4,Locate Fees,Locate 100 SRDX @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,11/13/2025,0,1,Locate Fees,Locate 100 MRSN @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,11/18/2025,0,1,Locate Fees,Locate 100 OLMA @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,11/18/2025,0,0.06,Locate & Borrow Charge,ONB 26 OLMA ($-0.00058) for 11/18,Equities
-ACCT0001,Sample Trader,USD,11/19/2025,0,0.4,Locate Fees,Locate 100 SEMR @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,11/03/2025,0,0.6,Locate Fees,Pre-Borrow 100 NCPL @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,11/03/2025,0,0.4,Locate Fees,Locate 200 PIXY @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,11/03/2025,0,2,Locate Fees,Locate 200 DRMA @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,11/07/2025,0,8,Locate Fees,Locate 2000 CLRB @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,11/07/2025,0,0.4,Locate Fees,Locate 100 MLGO @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,11/11/2025,0,0.6,Locate Fees,Locate 100 GRNQ @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,11/11/2025,0,36,Locate Fees,Locate 3000 AVGR @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,11/11/2025,18,0,Locate Fees,Locate credit 3000 AVGR @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,11/11/2025,0,11.25,Locate Fees,Locate 1500 YOSH @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,11/11/2025,3.45,0,Locate Fees,Locate credit 1500 YOSH @ 0.0023 per share,Equities
+ACCT0001,Sample Trader,USD,11/11/2025,0,0.8,Locate Fees,Locate 200 ALTO @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,11/12/2025,0,6,Locate Fees,Locate 1500 SINT @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,11/12/2025,0,3.2,Locate Fees,Locate 800 ICCT @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,11/14/2025,0,3.8,Locate & Borrow Charge,ONB 100 GRNQ ($0.038) for 11/11,Equities
+ACCT0001,Sample Trader,USD,11/14/2025,0,10,Locate Fees,Locate 500 SINT @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,11/14/2025,0,0.2,Locate Fees,Locate 100 AMPX @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,11/14/2025,0,1.2,Locate Fees,Locate 300 SGBX @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,11/17/2025,0,0.22,Locate & Borrow Charge,ONB 200 SGBX ($0.0011) for 11/14,Equities
+ACCT0001,Sample Trader,USD,11/17/2025,0,1.8,Locate Fees,Locate 300 ONFO @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,11/17/2025,0,3,Locate Fees,Locate 1000 QLGN @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,11/17/2025,0,0.6,Locate Fees,Single-Use 200 TNON @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,11/17/2025,0,10,Locate Fees,Locate 1000 ENSC @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,11/19/2025,0,0.18,Locate & Borrow Charge,ONB 100 AMPX ($0.0018) for 11/14,Equities
+ACCT0001,Sample Trader,USD,11/21/2025,0,2,Locate Fees,Locate 100 CNSP @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,11/21/2025,0,10,Locate Fees,Locate 1000 WINT @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,11/25/2025,0,0.6,Locate Fees,Locate 300 MLGO @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,11/25/2025,0,0.75,Locate Fees,Locate 100 PALI @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,11/25/2025,0,1.6,Locate Fees,Locate 800 DRMA @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,11/25/2025,0,1.8,Locate Fees,Single-Use 300 WINT @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,11/26/2025,0,0.75,Locate Fees,Locate 100 ENSC @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,11/26/2025,0.19,0,Locate Fees,Locate credit 50 ENSC @ 0.0038 per share,Equities
+ACCT0001,Sample Trader,USD,11/27/2025,0,0.37,Locate & Borrow Charge,ONB 50 PALI ($0.0074) for 11/25,Equities
+ACCT0001,Sample Trader,USD,11/27/2025,0,1,Locate Fees,Locate 500 SGBX @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,11/27/2025,0.25,0,Locate Fees,Locate credit 250 SGBX @ 0.001 per share,Equities
 ACCT0001,Sample Trader,USD,12/01/2025,0,59,Software & Data,ZeroPro,Equities
-ACCT0001,Sample Trader,USD,12/01/2025,0,1,Locate Fees,Locate 100 QTTB @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,12/01/2025,0,1,Locate Fees,Locate 100 QTTB @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,12/01/2025,0,0.9,Locate Fees,Locate 100 AHMA @ 0.009 per share,Equities
-ACCT0001,Sample Trader,USD,12/01/2025,0,0.66,Locate & Borrow Charge,ONB 165 QTTB ($-0.00326) for 12/01,Equities
-ACCT0001,Sample Trader,USD,12/02/2025,0,2.4,Locate Fees,Locate 100 TAOP @ 0.024 per share,Equities
-ACCT0001,Sample Trader,USD,12/02/2025,0,4.8,Locate Fees,Locate 100 PLRZ @ 0.048 per share,Equities
-ACCT0001,Sample Trader,USD,12/02/2025,0,2.55,Locate Fees,Locate 100 TAOP @ 0.0255 per share,Equities
-ACCT0001,Sample Trader,USD,12/04/2025,0,12.15,Locate Fees,Locate 100 PLRZ @ 0.1215 per share,Equities
-ACCT0001,Sample Trader,USD,12/05/2025,0,0.6,Locate Fees,Locate 100 LGHL @ 0.006 per share,Equities
-ACCT0001,Sample Trader,USD,12/05/2025,0,5,Locate Fees,Locate 100 GURE @ 0.05 per share,Equities
-ACCT0001,Sample Trader,USD,12/08/2025,0,15,Locate Fees,Locate 100 TGL @ 0.15 per share,Equities
-ACCT0001,Sample Trader,USD,12/08/2025,0,3,Locate Fees,Locate 100 TWG @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,12/08/2025,0,0.4,Locate Fees,Locate 100 FULC @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,12/08/2025,0,0.4,Locate Fees,Locate 100 WVE @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,12/08/2025,0,23.55,Locate Fees,Locate 100 CETX @ 0.2355 per share,Equities
-ACCT0001,Sample Trader,USD,12/09/2025,0,6,Locate Fees,Locate 100 XCUR @ 0.06 per share,Equities
-ACCT0001,Sample Trader,USD,12/10/2025,0,14.39,Locate Fees,Locate 100 ENVB @ 0.1439 per share,Equities
-ACCT0001,Sample Trader,USD,12/10/2025,0,12,Locate Fees,Locate 100 ASPC @ 0.12 per share,Equities
-ACCT0001,Sample Trader,USD,12/10/2025,0,14.99,Locate Fees,Locate 100 BBGI @ 0.1499 per share,Equities
-ACCT0001,Sample Trader,USD,12/11/2025,0,6,Locate Fees,Locate 100 AXIL @ 0.06 per share,Equities
-ACCT0001,Sample Trader,USD,12/12/2025,0,2,Locate Fees,Locate 200 YCBD @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,12/12/2025,0,0.4,Locate Fees,Locate 100 KPLT @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,12/15/2025,0,6,Locate Fees,Locate 100 RADX @ 0.06 per share,Equities
-ACCT0001,Sample Trader,USD,12/15/2025,0,0.4,Locate Fees,Locate 100 KYTX @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,12/15/2025,0,0.4,Locate Fees,Locate 100 YCBD @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,12/15/2025,0,0.4,Locate Fees,Locate 100 YCBD @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,12/15/2025,0,0.8,Locate Fees,Locate 200 YCBD @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,12/16/2025,0,11.25,Locate Fees,Locate 100 AMCI @ 0.1125 per share,Equities
-ACCT0001,Sample Trader,USD,12/17/2025,0,0.8,Locate Fees,Locate 200 ISPO @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,12/17/2025,0,0.4,Locate Fees,Locate 100 DBVT @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,12/18/2025,0,1,Locate Fees,Locate 100 ATHA @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,12/18/2025,0,0.4,Locate Fees,Locate 100 LHAI @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,12/18/2025,0,0.4,Locate Fees,Locate 100 SOC @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,12/18/2025,0,0.09,Locate & Borrow Charge,ONB 78 SOC ($-0.00025) for 12/18,Equities
-ACCT0001,Sample Trader,USD,12/18/2025,0,0.06,Locate & Borrow Charge,ONB 86 ATHA ($-0.00019) for 12/18,Equities
-ACCT0001,Sample Trader,USD,12/24/2025,0,2,Locate Fees,Locate 200 INDP @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,12/24/2025,0,4.36,Locate & Borrow Charge,ONB 100 INDP ($-0.04352) for 12/24,Equities
-ACCT0001,Sample Trader,USD,12/26/2025,0,2.7,Locate Fees,Locate 100 ASPC @ 0.027 per share,Equities
-ACCT0001,Sample Trader,USD,12/29/2025,0,3,Locate Fees,Single-Use 100 WOK @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,12/29/2025,0,3,Locate Fees,Pre-Borrow 100 WOK @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,12/30/2025,0,1,Locate Fees,Locate 100 EKSO @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,12/31/2025,0,2,Locate Fees,Locate 100 ANGH @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,12/31/2025,0,2,Locate Fees,Locate 100 ANGH @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,12/02/2025,0,10,Locate Fees,Locate 1000 LIPO @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,12/08/2025,0,0.8,Locate Fees,Locate 200 ABVX @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,12/09/2025,0,1.2,Locate Fees,Single-Use 300 RVSN @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,12/09/2025,0,2,Locate Fees,Locate 200 IMTE @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,12/09/2025,0,3,Locate Fees,Locate 500 BCTX @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,12/09/2025,0,3.75,Locate Fees,Locate 500 ABVX @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,12/11/2025,0,0.4,Locate Fees,Locate 100 ALTO @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,12/11/2025,0.06,0,Locate Fees,Locate credit 50 ALTO @ 0.0012 per share,Equities
+ACCT0001,Sample Trader,USD,12/11/2025,0,5,Locate Fees,Locate 500 QLGN @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,12/12/2025,0,3,Locate Fees,Locate 300 EVTV @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,12/15/2025,0,1.2,Locate Fees,Locate 300 OCEA @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,12/17/2025,0,2,Locate Fees,Locate 1000 RELI @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,12/17/2025,0,1,Locate Fees,Locate 500 TNON @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,12/17/2025,0,0.8,Locate Fees,Locate 200 MLGO @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,12/18/2025,0,1.2,Locate Fees,Locate 300 ALTO @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,12/19/2025,0,1.2,Locate Fees,Locate 300 KTTA @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,12/19/2025,0.2,0,Locate Fees,Locate credit 100 KTTA @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,12/19/2025,0,0.4,Locate Fees,Locate 100 COEP @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,12/19/2025,0.1,0,Locate Fees,Locate credit 50 COEP @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,12/19/2025,0,0.75,Locate Fees,Locate 100 INAB @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,12/22/2025,0,0.09,Locate & Borrow Charge,ONB 300 ALTO ($0.0003) for 12/18,Equities
+ACCT0001,Sample Trader,USD,12/22/2025,0,2,Locate Fees,Locate 100 PIXY @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,12/22/2025,0,12,Locate Fees,Locate 1000 INAB @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,12/22/2025,0,0.8,Locate Fees,Locate 200 TIRX @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,12/22/2025,0,6,Locate Fees,Locate 300 XCUR @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,12/23/2025,0,0.6,Locate Fees,Locate 200 MTNB @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,12/23/2025,0,2,Locate Fees,Locate 500 VRAX @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,12/24/2025,0,1.53,Locate & Borrow Charge,ONB 100 PIXY ($0.0153) for 12/22,Equities
+ACCT0001,Sample Trader,USD,12/24/2025,0,3.75,Locate Fees,Locate 500 MGOL @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,12/26/2025,0,0.8,Locate Fees,Locate 200 EVTV @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,12/26/2025,0.13,0,Locate Fees,Locate credit 50 EVTV @ 0.0025 per share,Equities
+ACCT0001,Sample Trader,USD,12/26/2025,0,9,Locate Fees,Locate 1500 ABVX @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,12/26/2025,2.25,0,Locate Fees,Locate credit 750 ABVX @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,12/30/2025,0,20,Locate Fees,Locate 1000 SINT @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,12/31/2025,0,1.2,Locate Fees,Single-Use 200 LGMK @ 0.006 per share,Equities
 ACCT0001,Sample Trader,USD,01/01/2026,0,59,Software & Data,ZeroPro,Equities
-ACCT0001,Sample Trader,USD,01/05/2026,0,3,Locate Fees,Locate 100 MNTS @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,01/06/2026,0,2,Locate Fees,Locate 100 ALMS @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,01/06/2026,0,4,Locate Fees,Single-Use 200 AZI @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,01/06/2026,0,0.4,Locate Fees,Locate 100 DRUG @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,01/07/2026,0,2,Locate Fees,Locate 100 VTYX @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,01/08/2026,0,2,Locate Fees,Locate 100 FLYX @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,01/09/2026,0,7.43,Locate Fees,Locate 100 ANPA @ 0.0743 per share,Equities
-ACCT0001,Sample Trader,USD,01/13/2026,0,2,Locate Fees,Locate 100 AHMA @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,01/15/2026,0,3.6,Locate Fees,Locate 100 SPHL @ 0.036 per share,Equities
-ACCT0001,Sample Trader,USD,01/15/2026,0,7.5,Locate Fees,Locate 100 CJMB @ 0.075 per share,Equities
-ACCT0001,Sample Trader,USD,01/15/2026,0,3,Locate Fees,Locate 100 BNKK @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,01/20/2026,0,5.25,Locate Fees,Locate 100 SHPH @ 0.0525 per share,Equities
-ACCT0001,Sample Trader,USD,01/20/2026,0,2,Locate Fees,Locate 100 TWG @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,01/20/2026,0,0.4,Locate Fees,Locate 100 CRVS @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,01/20/2026,0,4,Locate Fees,Locate 200 IVF @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,01/22/2026,0,1.5,Locate Fees,Locate 100 CMCT @ 0.015 per share,Equities
-ACCT0001,Sample Trader,USD,01/22/2026,0,0.4,Locate Fees,Locate 100 NAMM @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,01/22/2026,0,0.4,Locate Fees,Locate 100 NAMM @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,01/23/2026,0,3.15,Locate Fees,Locate 100 MOVE @ 0.0315 per share,Equities
-ACCT0001,Sample Trader,USD,01/23/2026,0,6,Locate Fees,Locate 200 KUST @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,01/23/2026,0,0.81,Locate Fees,Locate 100 NAMM @ 0.0081 per share,Equities
-ACCT0001,Sample Trader,USD,01/26/2026,0,1,Locate Fees,Locate 100 BATL @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,01/26/2026,0,15,Locate Fees,Single-Use 100 BNAI @ 0.15 per share,Equities
-ACCT0001,Sample Trader,USD,01/26/2026,0,3.51,Locate Fees,Locate 100 NVVE @ 0.0351 per share,Equities
-ACCT0001,Sample Trader,USD,01/27/2026,0,1,Locate Fees,Locate 100 NUWE @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,01/27/2026,0,0.75,Locate Fees,Locate 100 PHGE @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,01/27/2026,0,0.45,Locate Fees,Locate 100 CYN @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,01/29/2026,0,5.26,Locate Fees,Locate 100 XHLD @ 0.0526 per share,Equities
-ACCT0001,Sample Trader,USD,01/29/2026,0,3,Locate Fees,Locate 100 SER @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,01/30/2026,0,5.63,Locate Fees,Locate 100 VIVS @ 0.0563 per share,Equities
-ACCT0001,Sample Trader,USD,01/30/2026,0,5.63,Locate Fees,Locate 100 VIVS @ 0.0563 per share,Equities
-ACCT0001,Sample Trader,USD,01/30/2026,0,2,Locate Fees,Locate 100 PMN @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,01/30/2026,0,0.4,Locate Fees,Locate 100 ANL @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,01/30/2026,0,4.05,Locate Fees,Locate 100 LRHC @ 0.0405 per share,Equities
+ACCT0001,Sample Trader,USD,01/02/2026,0,0.75,Locate Fees,Locate 100 CNSP @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,01/02/2026,0,2.4,Locate Fees,Locate 200 RELI @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,01/02/2026,0,1.2,Locate Fees,Locate 200 BRTX @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,01/02/2026,0.37,0,Locate Fees,Locate credit 100 BRTX @ 0.0037 per share,Equities
+ACCT0001,Sample Trader,USD,01/02/2026,0,4,Locate Fees,Locate 1000 ACRN @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,01/02/2026,0,2.25,Locate Fees,Pre-Borrow 300 ALTO @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,01/02/2026,0,2.4,Locate Fees,Locate 200 VRAX @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,01/05/2026,0,3,Locate Fees,Locate 500 HUBC @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,01/06/2026,0,11.25,Locate Fees,Single-Use 1500 MTNB @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,01/07/2026,0,3,Locate Fees,Locate 1000 QLGN @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,01/07/2026,0,4,Locate Fees,Locate 200 TIRX @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,01/09/2026,0,0.9,Locate Fees,Locate 300 ENSC @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,01/09/2026,0.45,0,Locate Fees,Locate credit 300 ENSC @ 0.0015 per share,Equities
+ACCT0001,Sample Trader,USD,01/09/2026,0,4,Locate Fees,Locate 200 CNSP @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,01/12/2026,0,16,Locate Fees,Locate 800 ARQT @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,01/12/2026,0,2.25,Locate Fees,Locate 300 BNZI @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,01/13/2026,0,30,Locate Fees,Locate 1500 ELAB @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,01/14/2026,0,0.8,Locate Fees,Locate 200 UPXI @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,01/14/2026,0,3.75,Locate Fees,Single-Use 500 DRMA @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,01/16/2026,0,0.8,Locate Fees,Locate 200 LIPO @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,01/16/2026,0.13,0,Locate Fees,Locate credit 50 LIPO @ 0.0025 per share,Equities
+ACCT0001,Sample Trader,USD,01/16/2026,0,0.9,Locate Fees,Locate 300 LUCY @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,01/16/2026,0.14,0,Locate Fees,Locate credit 150 LUCY @ 0.0009 per share,Equities
+ACCT0001,Sample Trader,USD,01/16/2026,0,4,Locate Fees,Locate 1000 SINT @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,01/16/2026,0,0.8,Locate Fees,Locate 200 BNZI @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,01/19/2026,0,2,Locate Fees,Locate 100 NVOS @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,01/19/2026,0.3,0,Locate Fees,62% Locate CreditLocate 50 NVOS @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,01/19/2026,0,10,Locate Fees,Locate 1000 MGOL @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,01/20/2026,0,0.9,Locate Fees,Locate 300 WINT @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,01/21/2026,0,5,Locate Fees,Locate 500 GRNQ @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,01/21/2026,0,0.8,Locate Fees,Locate 200 IMTE @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,01/21/2026,0,2.25,Locate Fees,Locate 300 GNPX @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,01/21/2026,0,0.6,Locate Fees,Locate 300 MTNB @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,01/21/2026,0,1.8,Locate Fees,Locate 300 FRGT @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,01/22/2026,0,0.12,Locate & Borrow Charge,ONB 300 WINT ($0.0004) for 01/20,Equities
+ACCT0001,Sample Trader,USD,01/23/2026,0,10,Locate Fees,Locate 500 MLGO @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,01/23/2026,5,0,Locate Fees,62% Locate CreditLocate 500 MLGO @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,01/23/2026,0,2,Locate Fees,Locate 500 ALTO @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,01/23/2026,0,1.2,Locate Fees,Locate 100 VRAX @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,01/29/2026,0,3.6,Locate Fees,Locate 300 AMPX @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,01/29/2026,0,0.2,Locate Fees,Locate 100 JZXN @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,01/30/2026,0,1.5,Locate Fees,Locate 500 SINT @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,01/30/2026,0,15,Locate Fees,Locate 2000 CLRB @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,01/30/2026,0,1.2,Locate Fees,Locate 100 ELAB @ 0.012 per share,Equities
 ACCT0001,Sample Trader,USD,02/01/2026,0,59,Software & Data,ZeroPro,Equities
-ACCT0001,Sample Trader,USD,02/02/2026,0,12,Locate Fees,Locate 100 VHUB @ 0.12 per share,Equities
-ACCT0001,Sample Trader,USD,02/03/2026,0,1.19,Locate Fees,Locate 100 FATN @ 0.0119 per share,Equities
-ACCT0001,Sample Trader,USD,02/03/2026,0,2.25,Locate Fees,Locate 100 NPT @ 0.0225 per share,Equities
-ACCT0001,Sample Trader,USD,02/03/2026,0,1.92,Locate Fees,Locate 100 FATN @ 0.0192 per share,Equities
-ACCT0001,Sample Trader,USD,02/04/2026,0,2.23,Locate Fees,Locate 100 CIGL @ 0.0223 per share,Equities
-ACCT0001,Sample Trader,USD,02/06/2026,0,2.42,Locate Fees,Locate 100 LBTYB @ 0.0242 per share,Equities
-ACCT0001,Sample Trader,USD,02/10/2026,0,0.4,Locate Fees,Locate 100 EVMN @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,02/12/2026,0,0.4,Locate Fees,Locate 100 FSLY @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,02/13/2026,0,0.4,Locate Fees,Locate 100 CRSR @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,02/17/2026,0,6.15,Locate Fees,Locate 100 PLYX @ 0.0615 per share,Equities
-ACCT0001,Sample Trader,USD,02/17/2026,0,15.95,Locate Fees,Locate 100 OBAI @ 0.1595 per share,Equities
-ACCT0001,Sample Trader,USD,02/17/2026,0,0.4,Locate Fees,Locate 100 CMPS @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,02/18/2026,0,0.45,Locate Fees,Locate 100 SNSE @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,02/19/2026,0,15.3,Locate Fees,Locate 100 RUBI @ 0.153 per share,Equities
-ACCT0001,Sample Trader,USD,02/20/2026,0,1,Locate Fees,Locate 100 ANPA @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,02/24/2026,0,1,Locate Fees,Locate 100 VIR @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,02/26/2026,0,1.49,Locate Fees,Locate 100 HCTI @ 0.0149 per share,Equities
+ACCT0001,Sample Trader,USD,02/02/2026,0,12,Locate Fees,Locate 1000 JZXN @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,02/02/2026,0,0.6,Locate Fees,Locate 200 SXTC @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,02/02/2026,0,0.6,Locate Fees,Locate 200 DRMA @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,02/03/2026,0,1,Locate Fees,Locate 500 HUBC @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,02/03/2026,0.3,0,Locate Fees,62% Locate CreditLocate 500 HUBC @ 0.0006 per share,Equities
+ACCT0001,Sample Trader,USD,02/03/2026,0,0.4,Locate Fees,Locate 100 ACRN @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,02/10/2026,0,2,Locate Fees,Locate 500 XCUR @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,02/10/2026,0.3,0,Locate Fees,Locate credit 250 XCUR @ 0.0012 per share,Equities
+ACCT0001,Sample Trader,USD,02/10/2026,0,1.5,Locate Fees,Locate 500 JZXN @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,02/10/2026,0,4,Locate Fees,Locate 2000 VERB @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,02/10/2026,1,0,Locate Fees,Locate credit 1000 VERB @ 0.001 per share,Equities
+ACCT0001,Sample Trader,USD,02/10/2026,0,1.2,Locate Fees,Pre-Borrow 200 NAOV @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,02/10/2026,0.37,0,Locate Fees,Locate credit 100 NAOV @ 0.0037 per share,Equities
+ACCT0001,Sample Trader,USD,02/11/2026,0,0.8,Locate Fees,Locate 200 SINT @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,02/12/2026,0,1,Locate Fees,Locate 500 DATS @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,02/12/2026,0,0.2,Locate Fees,Locate 100 COEP @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,02/13/2026,0,0.2,Locate Fees,Locate 100 QLGN @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,02/13/2026,0,0.8,Locate Fees,Locate 200 XPON @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,02/13/2026,0,1.8,Locate Fees,Locate 300 GRNQ @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,02/13/2026,0,4,Locate Fees,Locate 200 GNPX @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,02/18/2026,0,0.6,Locate Fees,Locate 100 BOLT @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,02/19/2026,0,0.75,Locate Fees,Locate 100 SGBX @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,02/19/2026,0.23,0,Locate Fees,Locate credit 100 SGBX @ 0.0023 per share,Equities
+ACCT0001,Sample Trader,USD,02/19/2026,0,3.75,Locate Fees,Locate 500 TNON @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,02/19/2026,0.57,0,Locate Fees,62% Locate CreditLocate 250 TNON @ 0.0023 per share,Equities
+ACCT0001,Sample Trader,USD,02/19/2026,0,6,Locate Fees,Locate 300 HUBC @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,02/23/2026,0,0.8,Locate Fees,Single-Use 200 LUCY @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,02/24/2026,0,0.8,Locate Fees,Locate 200 TCBP @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,02/25/2026,0,1.2,Locate Fees,Locate 200 MLGO @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,02/25/2026,0,0.3,Locate Fees,Locate 100 CYCN @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,02/25/2026,0,10,Locate Fees,Locate 500 BRTX @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,02/26/2026,0,2.4,Locate Fees,Locate 200 CLRB @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,02/26/2026,0.37,0,Locate Fees,62% Locate CreditLocate 50 CLRB @ 0.0074 per share,Equities
+ACCT0001,Sample Trader,USD,02/26/2026,0,0.9,Locate Fees,Locate 300 NCPL @ 0.003 per share,Equities
 ACCT0001,Sample Trader,USD,03/01/2026,0,59,Software & Data,ZeroPro,Equities
-ACCT0001,Sample Trader,USD,03/02/2026,0,3,Locate Fees,Locate 100 TMDE @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,03/02/2026,0,6,Locate Fees,Locate 100 BATL @ 0.06 per share,Equities
-ACCT0001,Sample Trader,USD,03/02/2026,0,0.4,Locate Fees,Locate 100 INDO @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,03/02/2026,0,2,Locate Fees,Locate 100 TMDE @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,03/03/2026,0,6,Locate Fees,Locate 100 BATL @ 0.06 per share,Equities
-ACCT0001,Sample Trader,USD,03/04/2026,0,4.5,Locate Fees,Locate 100 VCIG @ 0.045 per share,Equities
-ACCT0001,Sample Trader,USD,03/04/2026,0,22.5,Locate Fees,Locate 100 CANF @ 0.225 per share,Equities
-ACCT0001,Sample Trader,USD,03/05/2026,0,2,Locate Fees,Locate 100 MTEK @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,03/06/2026,0,4.5,Locate Fees,Locate 100 CRE @ 0.045 per share,Equities
-ACCT0001,Sample Trader,USD,03/09/2026,0,0.4,Locate Fees,Locate 100 RLMD @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,03/10/2026,0,1,Locate Fees,Locate 100 INKT @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,03/10/2026,0,2.4,Locate Fees,Locate 100 ATPC @ 0.024 per share,Equities
-ACCT0001,Sample Trader,USD,03/10/2026,0,12.15,Locate Fees,Locate 100 ATPC @ 0.1215 per share,Equities
-ACCT0001,Sample Trader,USD,03/11/2026,0,0.4,Locate Fees,Locate 100 DOMO @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,03/12/2026,0,0.4,Locate Fees,Locate 100 TLYS @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,03/16/2026,0,1,Locate Fees,Locate 100 CTMX @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,03/16/2026,0,0.4,Locate Fees,Locate 100 AIRS @ 0.004 per share,Equities
-ACCT0001,Sample Trader,USD,03/16/2026,0,0.02,Locate & Borrow Charge,ONB 59 CTMX ($-0.00019) for 03/16,Equities
-ACCT0001,Sample Trader,USD,03/19/2026,0,15,Locate Fees,Locate 100 CHNR @ 0.15 per share,Equities
-ACCT0001,Sample Trader,USD,03/19/2026,0,3.6,Locate Fees,Locate 200 SER @ 0.018 per share,Equities
-ACCT0001,Sample Trader,USD,03/19/2026,0,3,Locate Fees,Locate 100 SER @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,03/20/2026,0,1.2,Locate Fees,Locate 100 CODX @ 0.012 per share,Equities
-ACCT0001,Sample Trader,USD,03/20/2026,0,1.2,Locate Fees,Locate 100 SER @ 0.012 per share,Equities
-ACCT0001,Sample Trader,USD,03/23/2026,0,8.91,Locate Fees,Locate 100 UGRO @ 0.0891 per share,Equities
-ACCT0001,Sample Trader,USD,03/23/2026,0,10.71,Locate Fees,Locate 100 UGRO @ 0.1071 per share,Equities
-ACCT0001,Sample Trader,USD,03/24/2026,0,1.35,Locate Fees,Locate 100 FEED @ 0.0135 per share,Equities
-ACCT0001,Sample Trader,USD,03/24/2026,0,0.75,Locate Fees,Locate 100 FEED @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,03/24/2026,0,0.75,Locate Fees,Locate 100 FEED @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,03/25/2026,0,3,Locate Fees,Locate 200 FEED @ 0.015 per share,Equities
-ACCT0001,Sample Trader,USD,03/26/2026,0,5.46,Locate Fees,Locate 100 FCHL @ 0.0546 per share,Equities
-ACCT0001,Sample Trader,USD,03/26/2026,0,14.63,Locate Fees,Locate 100 UGRO @ 0.1463 per share,Equities
-ACCT0001,Sample Trader,USD,03/26/2026,0,0.45,Locate Fees,Locate 100 KOD @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,03/30/2026,0,8.91,Locate Fees,Locate 100 ELAB @ 0.0891 per share,Equities
-ACCT0001,Sample Trader,USD,03/30/2026,0,24.08,Locate Fees,Locate 100 EEIQ @ 0.2408 per share,Equities
-ACCT0001,Sample Trader,USD,03/30/2026,0,15,Locate Fees,Locate 500 BFRG @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,03/31/2026,0,13.5,Locate Fees,Locate 100 KIDZ @ 0.135 per share,Equities
-ACCT0001,Sample Trader,USD,03/31/2026,0,0.45,Locate Fees,Locate 100 APLS @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,03/31/2026,0,14,Locate Fees,Locate 100 KIDZ @ 0.14 per share,Equities
+ACCT0001,Sample Trader,USD,03/02/2026,0,2,Locate Fees,Locate 200 MTNB @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,03/02/2026,0,0.6,Locate Fees,Single-Use 300 DRMA @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,03/02/2026,0,0.6,Locate Fees,Locate 200 JAGX @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,03/03/2026,0,0.3,Locate Fees,Locate 100 BOLT @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,03/03/2026,0.1,0,Locate Fees,Locate credit 50 BOLT @ 0.0019 per share,Equities
+ACCT0001,Sample Trader,USD,03/03/2026,0,2.25,Locate Fees,Locate 300 UPXI @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,03/03/2026,0,1.2,Locate Fees,Locate 300 PALI @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,03/03/2026,0,1.8,Locate Fees,Locate 300 CLRB @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,03/06/2026,0,2,Locate Fees,Locate 500 ENSC @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,03/06/2026,0,2,Locate Fees,Locate 500 ICCT @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,03/09/2026,0,0.8,Locate Fees,Single-Use 200 NUWE @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,03/11/2026,0,1.5,Locate Fees,Locate 200 WISA @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,03/11/2026,0,1.5,Locate Fees,Locate 200 PALI @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,03/12/2026,0,17.25,Locate Fees,Locate 2300 FRGT @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,03/16/2026,0,2.46,Locate & Borrow Charge,ONB 200 WISA ($0.0123) for 03/11,Equities
+ACCT0001,Sample Trader,USD,03/16/2026,0,2,Locate Fees,Locate 1000 MTNB @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,03/16/2026,0,2,Locate Fees,Locate 100 DRMA @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,03/20/2026,0,10,Locate Fees,Locate 1000 PIXY @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,03/23/2026,0,0.6,Locate Fees,Locate 200 DATS @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,03/23/2026,0,6,Locate Fees,Locate 2000 TNON @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,03/23/2026,0,0.9,Locate Fees,Locate 300 VERB @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,03/23/2026,0,4,Locate Fees,Locate 1000 LUCY @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,03/23/2026,0,5,Locate Fees,Locate 500 ELAB @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,03/24/2026,0,0.64,Locate & Borrow Charge,ONB 200 VERB ($0.0032) for 03/23,Equities
+ACCT0001,Sample Trader,USD,03/25/2026,0,18,Locate Fees,Locate 1500 EVTV @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,03/25/2026,0,1.2,Locate Fees,Locate 200 QLGN @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,03/25/2026,0.36,0,Locate Fees,Locate credit 200 QLGN @ 0.0018 per share,Equities
+ACCT0001,Sample Trader,USD,03/26/2026,0,6,Locate Fees,Locate 500 NUWE @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,03/26/2026,0,1,Locate Fees,Locate 100 ELAB @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,03/26/2026,0,3.75,Locate Fees,Locate 500 PALI @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,03/30/2026,0,3.2,Locate Fees,Locate 800 DATS @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,03/31/2026,0,2,Locate Fees,Locate 500 HUBC @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,03/31/2026,0,17.25,Locate Fees,Locate 2300 WINT @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,03/31/2026,10.58,0,Locate Fees,62% Locate CreditLocate 2300 WINT @ 0.0046 per share,Equities
 ACCT0001,Sample Trader,USD,04/01/2026,0,59,Software & Data,ZeroPro,Equities
-ACCT0001,Sample Trader,USD,04/01/2026,0,3.3,Locate Fees,Locate 100 CYCN @ 0.033 per share,Equities
-ACCT0001,Sample Trader,USD,04/01/2026,0,3.3,Locate Fees,Locate 100 CYCN @ 0.033 per share,Equities
-ACCT0001,Sample Trader,USD,04/01/2026,0,19,Locate Fees,Locate 200 BCG @ 0.095 per share,Equities
-ACCT0001,Sample Trader,USD,04/02/2026,0,1.25,Locate Fees,Locate 100 SKYQ @ 0.0125 per share,Equities
-ACCT0001,Sample Trader,USD,04/02/2026,0,0.75,Locate Fees,Locate 100 TMDE @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,04/02/2026,0,2.61,Locate Fees,Locate 300 COCP @ 0.0087 per share,Equities
-ACCT0001,Sample Trader,USD,04/02/2026,0,1.5,Locate Fees,Locate 200 TMDE @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,04/02/2026,0,0.75,Locate Fees,Locate 100 COCP @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,04/06/2026,0,6,Locate Fees,Locate 100 MLEC @ 0.06 per share,Equities
-ACCT0001,Sample Trader,USD,04/08/2026,0,15,Locate Fees,Locate 100 BBGI @ 0.15 per share,Equities
-ACCT0001,Sample Trader,USD,04/08/2026,0,0.45,Locate Fees,Locate 100 OMEX @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,04/08/2026,0,0.45,Locate Fees,Locate 100 OMEX @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,04/08/2026,0,1,Locate Fees,Locate 100 OMEX @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,04/08/2026,0,0.45,Locate Fees,Locate 100 JTAI @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,04/08/2026,0,6.93,Locate Fees,Locate 300 ELPW @ 0.0231 per share,Equities
-ACCT0001,Sample Trader,USD,04/08/2026,0,5,Locate Fees,Locate 100 BBGI @ 0.05 per share,Equities
-ACCT0001,Sample Trader,USD,04/09/2026,0,4,Locate Fees,Locate 200 GLMD @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,04/10/2026,0,3.52,Locate Fees,Single-Use 400 AIXI @ 0.0088 per share,Equities
-ACCT0001,Sample Trader,USD,04/10/2026,0,0.88,Locate Fees,Single-Use 100 AIXI @ 0.0088 per share,Equities
-ACCT0001,Sample Trader,USD,04/13/2026,0,0.45,Locate Fees,Locate 100 ALLO @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,04/13/2026,0,0.45,Locate Fees,Locate 100 RCT @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,04/13/2026,0,0.45,Locate Fees,Locate 100 ALLO @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,04/13/2026,0,3,Locate Fees,Locate 300 RECT @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,04/13/2026,0,4,Locate Fees,Locate 400 RCT @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,04/13/2026,0,26.85,Locate Fees,Single-Use 100 SKYQ @ 0.2685 per share,Equities
-ACCT0001,Sample Trader,USD,04/14/2026,0,0.45,Locate Fees,Locate 100 ROLR @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,04/15/2026,0,2,Locate Fees,Locate 100 VSA @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,04/15/2026,0,0.45,Locate Fees,Locate 100 BIRD @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,04/15/2026,0,2,Locate Fees,Locate 100 BIRD @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,04/16/2026,0,7.5,Locate Fees,Locate 100 MYSE @ 0.075 per share,Equities
-ACCT0001,Sample Trader,USD,04/16/2026,0,1.91,Locate Fees,Locate 100 MYSE @ 0.0191 per share,Equities
-ACCT0001,Sample Trader,USD,04/16/2026,0,0.99,Locate Fees,Locate 100 BIRD @ 0.0099 per share,Equities
-ACCT0001,Sample Trader,USD,04/16/2026,0,4,Locate Fees,Locate 400 ONFO @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,04/16/2026,0,1,Locate Fees,Locate 100 BTOG @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,04/16/2026,0,2,Locate Fees,Locate 100 ONFO @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,04/16/2026,0,1,Locate Fees,Locate 100 BTOG @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,04/17/2026,0,12,Locate Fees,Locate 100 PBM @ 0.12 per share,Equities
-ACCT0001,Sample Trader,USD,04/17/2026,0,4.95,Locate Fees,Locate 100 EFOI @ 0.0495 per share,Equities
-ACCT0001,Sample Trader,USD,04/17/2026,0,5.72,Locate Fees,Locate 100 EFOI @ 0.0572 per share,Equities
-ACCT0001,Sample Trader,USD,04/17/2026,0,6,Locate Fees,Locate 100 MYSE @ 0.06 per share,Equities
-ACCT0001,Sample Trader,USD,04/20/2026,0,18.98,Locate Fees,Locate 100 PBM @ 0.1898 per share,Equities
-ACCT0001,Sample Trader,USD,04/20/2026,0,2.36,Locate Fees,Locate 100 ENVB @ 0.0236 per share,Equities
-ACCT0001,Sample Trader,USD,04/20/2026,0,2.36,Locate Fees,Locate 100 ENVB @ 0.0236 per share,Equities
-ACCT0001,Sample Trader,USD,04/20/2026,0,8.8,Locate Fees,Locate 400 CMND @ 0.022 per share,Equities
-ACCT0001,Sample Trader,USD,04/20/2026,0,1.2,Locate Fees,Locate 200 WLDS @ 0.006 per share,Equities
-ACCT0001,Sample Trader,USD,04/21/2026,0,1,Locate Fees,Locate 100 LOBO @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,04/21/2026,0,3.42,Locate Fees,Locate 200 LOCL @ 0.0171 per share,Equities
-ACCT0001,Sample Trader,USD,04/21/2026,0,8,Locate Fees,Locate 400 LOBO @ 0.02 per share,Equities
-ACCT0001,Sample Trader,USD,04/22/2026,0,2.4,Locate Fees,Locate 100 AGPU @ 0.024 per share,Equities
-ACCT0001,Sample Trader,USD,04/22/2026,0,0.45,Locate Fees,Locate 100 INBX @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,04/23/2026,0,0.45,Locate Fees,Locate 100 CPIX @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,04/23/2026,0,10.65,Locate Fees,Locate 100 AKAN @ 0.1065 per share,Equities
-ACCT0001,Sample Trader,USD,04/23/2026,0,0.45,Locate Fees,Locate 100 CPIX @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,04/24/2026,0,0.45,Locate Fees,Locate 100 NTIP @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,04/24/2026,0,2.25,Locate Fees,Locate 100 ELPW @ 0.0225 per share,Equities
-ACCT0001,Sample Trader,USD,04/27/2026,0,6,Locate Fees,Locate 500 YAAS @ 0.012 per share,Equities
-ACCT0001,Sample Trader,USD,04/28/2026,0,5,Locate Fees,Locate 100 NEXR @ 0.05 per share,Equities
-ACCT0001,Sample Trader,USD,04/28/2026,0,5,Locate Fees,Locate 100 NEXR @ 0.05 per share,Equities
-ACCT0001,Sample Trader,USD,04/28/2026,0,6,Locate Fees,Locate 600 ATER @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,04/28/2026,0,12,Locate Fees,Locate 500 BIYA @ 0.024 per share,Equities
-ACCT0001,Sample Trader,USD,04/29/2026,0,2.7,Locate Fees,Locate 100 SAGT @ 0.027 per share,Equities
-ACCT0001,Sample Trader,USD,04/29/2026,0,3.15,Locate Fees,Locate 100 SAGT @ 0.0315 per share,Equities
-ACCT0001,Sample Trader,USD,04/29/2026,0,4.1,Locate Fees,Locate 200 XTLB @ 0.0205 per share,Equities
-ACCT0001,Sample Trader,USD,04/30/2026,0,18,Locate Fees,Locate 100 HCAI @ 0.18 per share,Equities
+ACCT0001,Sample Trader,USD,04/01/2026,0,1.6,Locate Fees,Locate 800 ABVX @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,04/01/2026,0,2.4,Locate Fees,Locate 200 GNPX @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,04/03/2026,0,3,Locate Fees,Single-Use 500 COEP @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,04/03/2026,0.56,0,Locate Fees,Locate credit 150 COEP @ 0.0037 per share,Equities
+ACCT0001,Sample Trader,USD,04/03/2026,0,2,Locate Fees,Locate 500 ENSC @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,04/06/2026,0,1.5,Locate Fees,Single-Use 500 QLGN @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,04/06/2026,0,6,Locate Fees,Locate 1000 MGOL @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,04/06/2026,0,3,Locate Fees,Locate 500 VERB @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,04/07/2026,0,0.6,Locate Fees,Locate 100 NAOV @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,04/07/2026,0,4,Locate Fees,Locate 200 LGMK @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,04/08/2026,0,1.5,Locate Fees,Locate 200 KTTA @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,04/09/2026,0,20,Locate Fees,Locate 1000 PRFX @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,04/09/2026,0,1.5,Locate Fees,Locate 200 LIPO @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,04/09/2026,0,4,Locate Fees,Single-Use 1000 SNTG @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,04/14/2026,0,4,Locate Fees,Locate 200 RVSN @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,04/14/2026,1,0,Locate Fees,62% Locate CreditLocate 100 RVSN @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,04/15/2026,0,0.3,Locate Fees,Locate 100 MTNB @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,04/15/2026,0,1.2,Locate Fees,Locate 200 WINT @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,04/15/2026,0,12,Locate Fees,Pre-Borrow 1000 KTTA @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,04/16/2026,0,1.2,Locate Fees,Locate 100 PIXY @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,04/16/2026,0,16,Locate Fees,Locate 800 AMPX @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,04/16/2026,0,0.8,Locate Fees,Locate 200 JAGX @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,04/17/2026,0,1.8,Locate Fees,Locate 300 RELI @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,04/17/2026,0,7.5,Locate Fees,Pre-Borrow 1000 YOSH @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,04/21/2026,0,3.2,Locate Fees,Locate 800 VINO @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,04/21/2026,0,0.6,Locate Fees,Locate 200 MTNB @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,04/21/2026,0,6,Locate Fees,Locate 1500 NUWE @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,04/21/2026,0,0.4,Locate Fees,Locate 200 PALI @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,04/27/2026,0,0.6,Locate Fees,Locate 100 CYCN @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,04/29/2026,0,3.75,Locate Fees,Locate 500 TNON @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,04/29/2026,0,1.2,Locate Fees,Locate 300 MGOL @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,04/30/2026,0,0.75,Locate Fees,Locate 100 LIPO @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,04/30/2026,0.12,0,Locate Fees,Locate credit 50 LIPO @ 0.0023 per share,Equities
+ACCT0001,Sample Trader,USD,04/30/2026,0,1,Locate Fees,Locate 100 OCEA @ 0.01 per share,Equities
 ACCT0001,Sample Trader,USD,05/01/2026,0,59,Software & Data,ZeroPro,Equities
-ACCT0001,Sample Trader,USD,05/01/2026,0,9.7,Locate Fees,Locate 100 CUE @ 0.097 per share,Equities
-ACCT0001,Sample Trader,USD,05/04/2026,0,0.45,Locate Fees,Locate 100 RLYB @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,05/04/2026,0,29,Locate Fees,Locate 100 CNSP @ 0.29 per share,Equities
-ACCT0001,Sample Trader,USD,05/04/2026,0,19,Locate Fees,Locate 100 PN @ 0.19 per share,Equities
-ACCT0001,Sample Trader,USD,05/05/2026,0,1,Locate Fees,Locate 100 CLRB @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,05/05/2026,0,1,Locate Fees,Locate 100 CLRB @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,05/05/2026,0,0.45,Locate Fees,Locate 100 BLZE @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,05/06/2026,0,0.45,Locate Fees,Locate 100 EVC @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,05/06/2026,0,6,Locate Fees,Locate 400 AHMA @ 0.015 per share,Equities
-ACCT0001,Sample Trader,USD,05/06/2026,0,1,Locate Fees,Locate 100 EVC @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,05/07/2026,0,1,Locate Fees,Locate 100 ATRA @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,05/07/2026,0,1,Locate Fees,Locate 100 RXT @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,05/07/2026,0,1,Locate Fees,Locate 100 RXT @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,05/07/2026,0,0.45,Locate Fees,Locate 100 AGL @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,05/08/2026,0,3,Locate Fees,Locate 100 PHOE @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,05/08/2026,1.86,0,Locate Fees,62% Locate CreditLocate 100 PHOE @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,05/08/2026,0,0.45,Locate Fees,Locate 100 INOD @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,05/08/2026,0.27,0,Locate Fees,62% Locate CreditLocate 100 INOD @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,05/11/2026,0,2.94,Locate Fees,Locate 100 CLIK @ 0.0294 per share,Equities
-ACCT0001,Sample Trader,USD,05/11/2026,0,4.95,Locate Fees,Locate 100 CLIK @ 0.0495 per share,Equities
-ACCT0001,Sample Trader,USD,05/11/2026,0,1.05,Locate Fees,Locate 100 ODYS @ 0.0105 per share,Equities
-ACCT0001,Sample Trader,USD,05/11/2026,0,0.9,Locate Fees,Locate 100 WOK @ 0.009 per share,Equities
-ACCT0001,Sample Trader,USD,05/11/2026,0,3.6,Locate Fees,Locate 200 WOK @ 0.018 per share,Equities
-ACCT0001,Sample Trader,USD,05/11/2026,2.5,0,Locate Fees,Locate credit 200 CLIK @ 0.0125 per share,Equities
-ACCT0001,Sample Trader,USD,05/11/2026,1.13,0,Locate Fees,Locate credit 300 WOK @ 0.00375 per share,Equities
-ACCT0001,Sample Trader,USD,05/12/2026,0,0.45,Locate Fees,Locate 100 BZFD @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,05/12/2026,0,1.35,Locate Fees,Locate 300 BZFD @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,05/12/2026,0,1.8,Locate Fees,Locate 400 TDIC @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,05/12/2026,0,1.27,Locate & Borrow Charge,ONB 400 BZFD ($-0.00316) for 05/12,Equities
-ACCT0001,Sample Trader,USD,05/14/2026,0,0.9,Locate Fees,Locate 200 SNAL @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,05/14/2026,0,4.62,Locate Fees,Locate 300 MOBX @ 0.0154 per share,Equities
-ACCT0001,Sample Trader,USD,05/14/2026,0,1.2,Locate Fees,Locate 200 SNAL @ 0.006 per share,Equities
-ACCT0001,Sample Trader,USD,05/14/2026,0,0.9,Locate Fees,Locate 200 SNAL @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,05/15/2026,0,0.81,Locate Fees,Locate 100 AUUD @ 0.0081 per share,Equities
-ACCT0001,Sample Trader,USD,05/15/2026,0,0.81,Locate Fees,Locate 100 AUUD @ 0.0081 per share,Equities
-ACCT0001,Sample Trader,USD,05/15/2026,0,5.25,Locate Fees,Locate 100 SLE @ 0.0525 per share,Equities
-ACCT0001,Sample Trader,USD,05/15/2026,0,6.99,Locate Fees,Locate 100 SLE @ 0.0699 per share,Equities
-ACCT0001,Sample Trader,USD,05/15/2026,0,2,Locate Fees,Locate 200 AUUD @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,05/15/2026,0,24.48,Locate & Borrow Charge,ONB 150 SLE ($-0.06118) for 05/15,Equities
-ACCT0001,Sample Trader,USD,05/17/2026,24.48,0,Locate & Borrow Charge,REV:ONB 150 SLE ($-0.06118) for 05/15,Equities
-ACCT0001,Sample Trader,USD,05/17/2026,0,19.19,Locate & Borrow Charge,ONB 150 SLE ($-0.09595) for 05/15,Equities
-ACCT0001,Sample Trader,USD,05/18/2026,0,5.31,Locate Fees,Locate 100 CISS @ 0.0531 per share,Equities
-ACCT0001,Sample Trader,USD,05/19/2026,0,6,Locate Fees,Locate 100 WNW @ 0.06 per share,Equities
-ACCT0001,Sample Trader,USD,05/19/2026,0,11.25,Locate Fees,Locate 100 WNW @ 0.1125 per share,Equities
-ACCT0001,Sample Trader,USD,05/19/2026,0,7.17,Locate Fees,Locate 100 WNW @ 0.0717 per share,Equities
-ACCT0001,Sample Trader,USD,05/26/2026,0,0.45,Locate Fees,Single-Use 100 MNTS @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,05/26/2026,0,0.58,Locate Fees,Locate 100 AIIO @ 0.0058 per share,Equities
-ACCT0001,Sample Trader,USD,05/26/2026,0,0.52,Locate Fees,Locate 100 AIIO @ 0.0052 per share,Equities
-ACCT0001,Sample Trader,USD,05/26/2026,0,0.67,Locate Fees,Locate 100 AIIO @ 0.0067 per share,Equities
-ACCT0001,Sample Trader,USD,05/26/2026,0,5.36,Locate Fees,Locate 800 AIIO @ 0.0067 per share,Equities
-ACCT0001,Sample Trader,USD,05/27/2026,0,0.45,Locate Fees,Locate 100 QTTB @ 0.0045 per share,Equities
+ACCT0001,Sample Trader,USD,05/04/2026,0,0.6,Locate Fees,Locate 300 SBFM @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,05/05/2026,0,1.5,Locate Fees,Locate 500 CLRB @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,05/05/2026,0,2,Locate Fees,Locate 200 UPXI @ 0.01 per share,Equities
+ACCT0001,Sample Trader,USD,05/05/2026,0,2,Locate Fees,Locate 100 MTNB @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,05/07/2026,0,0.9,Locate & Borrow Charge,ONB 200 UPXI ($0.0045) for 05/05,Equities
+ACCT0001,Sample Trader,USD,05/07/2026,0,1.2,Locate Fees,Locate 300 ARQT @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,05/07/2026,0,2.4,Locate Fees,Locate 200 DRMA @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,05/13/2026,0,16,Locate Fees,Locate 800 JZXN @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,05/13/2026,0,2,Locate Fees,Locate 500 ARQT @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,05/14/2026,0,0.03,Locate & Borrow Charge,ONB 100 DRMA ($0.0003) for 05/07,Equities
+ACCT0001,Sample Trader,USD,05/14/2026,0,1.2,Locate Fees,Locate 200 LGMK @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,05/14/2026,0,0.4,Locate Fees,Locate 100 TNON @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,05/14/2026,0,0.9,Locate Fees,Locate 300 SBFM @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,05/18/2026,0,1,Locate Fees,Locate 500 BRTX @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,05/18/2026,0,3.75,Locate Fees,Locate 500 CNSP @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,05/18/2026,0,0.6,Locate Fees,Locate 200 ICCT @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,05/18/2026,0.19,0,Locate Fees,Locate credit 100 ICCT @ 0.0019 per share,Equities
+ACCT0001,Sample Trader,USD,05/22/2026,0,0.8,Locate Fees,Locate 200 ONFO @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,05/22/2026,0,2.4,Locate Fees,Locate 200 RVSN @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,05/27/2026,0,1.5,Locate Fees,Locate 500 SXTC @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,05/29/2026,0,1,Locate Fees,Locate 500 WINT @ 0.002 per share,Equities
 ACCT0001,Sample Trader,USD,06/01/2026,0,59,Software & Data,ZeroPro,Equities
-ACCT0001,Sample Trader,USD,06/24/2026,0,15.75,Locate Fees,Locate 500 VTAK @ 0.0315 per share,Equities
-ACCT0001,Sample Trader,USD,06/24/2026,0,9,Locate Fees,Locate 200 VTAK @ 0.045 per share,Equities
-ACCT0001,Sample Trader,USD,06/24/2026,8.14,0,Locate Fees,Locate credit 700 VTAK @ 0.011625 per share,Equities
-ACCT0001,Sample Trader,USD,06/25/2026,0,1.3,Locate Fees,Single-Use 200 AZI @ 0.0065 per share,Equities
-ACCT0001,Sample Trader,USD,06/25/2026,0,2.1,Locate Fees,Single-Use 200 AZI @ 0.0105 per share,Equities
-ACCT0001,Sample Trader,USD,07/01/2026,0,59,Software & Data,ZeroPro,Equities
-ACCT0001,Sample Trader,USD,07/10/2026,0,15,Locate Fees,Locate 100 GMM @ 0.15 per share,Equities
-ACCT0001,Sample Trader,USD,07/14/2026,0,1.5,Locate Fees,Locate 100 NXTC @ 0.015 per share,Equities
-ACCT0001,Sample Trader,USD,07/20/2026,0,8,Locate Fees,Locate 100 BIYA @ 0.08 per share,Equities
-ACCT0001,Sample Trader,USD,07/27/2026,0,5.31,Locate Fees,Locate 100 DFNS @ 0.0531 per share,Equities
-ACCT0001,Sample Trader,USD,07/27/2026,1.33,0,Locate Fees,Locate credit 100 DFNS @ 0.013275 per share,Equities
-ACCT0001,Sample Trader,USD,07/29/2026,0,10,Locate Fees,Locate 100 NCRA @ 0.1 per share,Equities
-ACCT0001,Sample Trader,USD,07/30/2026,0,1.5,Locate Fees,Locate 100 PN @ 0.015 per share,Equities
-ACCT0001,Sample Trader,USD,08/01/2026,0,59,Software & Data,ZeroPro,Equities
-ACCT0001,Sample Trader,USD,08/01/2026,59,0,Software & Data,Free Platform - Share or Trade Requirements Meet,Equities
-ACCT0001,Sample Trader,USD,08/03/2026,0,8.63,Locate Fees,Locate 100 UPC @ 0.0863 per share,Equities
-ACCT0001,Sample Trader,USD,08/04/2026,0,5.63,Locate Fees,Locate 100 MOVE @ 0.0563 per share,Equities
-ACCT0001,Sample Trader,USD,08/06/2026,0,6,Locate Fees,Locate 100 PAVS @ 0.06 per share,Equities
-ACCT0001,Sample Trader,USD,08/10/2026,0,4,Locate Fees,Locate 100 JWEL @ 0.04 per share,Equities
-ACCT0001,Sample Trader,USD,08/10/2026,0,4,Locate Fees,Locate 100 JWEL @ 0.04 per share,Equities
-ACCT0001,Sample Trader,USD,08/11/2026,0,0.45,Locate Fees,Locate 100 WAFU @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,08/11/2026,0,0.45,Locate Fees,Locate 100 WAFU @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,08/12/2026,0,1.71,Locate Fees,Locate 100 DOGZ @ 0.0171 per share,Equities
-ACCT0001,Sample Trader,USD,08/12/2026,0,1.71,Locate Fees,Locate 100 DOGZ @ 0.0171 per share,Equities
-ACCT0001,Sample Trader,USD,08/12/2026,0,1,Locate Fees,Locate 100 DOGZ @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,08/12/2026,0,3.15,Locate Fees,Locate 100 BOXL @ 0.0315 per share,Equities
-ACCT0001,Sample Trader,USD,08/12/2026,0,4.08,Locate Fees,Locate 100 BOXL @ 0.0408 per share,Equities
-ACCT0001,Sample Trader,USD,08/12/2026,0.23,0,Locate Fees,Locate credit 200 DOGZ @ 0.001125 per share,Equities
-ACCT0001,Sample Trader,USD,08/12/2026,0.11,0,Locate Fees,Locate credit 100 DOGZ @ 0.001125 per share,Equities
-ACCT0001,Sample Trader,USD,08/13/2026,0,8,Locate Fees,Locate 100 FGI @ 0.08 per share,Equities
-ACCT0001,Sample Trader,USD,08/14/2026,0,2.55,Locate Fees,Locate 100 AKAN @ 0.0255 per share,Equities
-ACCT0001,Sample Trader,USD,08/17/2026,0,1.5,Locate Fees,Locate 100 IPST @ 0.015 per share,Equities
-ACCT0001,Sample Trader,USD,08/17/2026,0,6,Locate Fees,Locate 200 TRUG @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,08/17/2026,0,3,Locate Fees,Locate 100 TRUG @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,08/21/2026,0,6,Locate Fees,Locate 100 SUGP @ 0.06 per share,Equities
-ACCT0001,Sample Trader,USD,08/21/2026,0,6,Locate Fees,Locate 100 SUGP @ 0.06 per share,Equities
-ACCT0001,Sample Trader,USD,08/21/2026,0.56,0,Locate Fees,Locate credit 200 SUGP @ 0.0028 per share,Equities
-ACCT0001,Sample Trader,USD,08/24/2026,0,0.75,Locate Fees,Locate 100 PMI @ 0.0075 per share,Equities
-ACCT0001,Sample Trader,USD,08/24/2026,0,1.5,Locate Fees,Locate 100 PMI @ 0.015 per share,Equities
-ACCT0001,Sample Trader,USD,08/25/2026,0,0.52,Locate Fees,Locate 100 SWVL @ 0.0052 per share,Equities
-ACCT0001,Sample Trader,USD,08/25/2026,0,1.08,Locate Fees,Locate 100 SWVL @ 0.0108 per share,Equities
-ACCT0001,Sample Trader,USD,08/25/2026,0,0.45,Locate Fees,Locate 100 CYPH @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,08/25/2026,0,0.9,Locate Fees,Locate 200 PRZO @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,08/25/2026,0,0.45,Locate Fees,Locate 100 CYPH @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,08/25/2026,0,0.45,Locate Fees,Locate 100 CYPH @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,08/25/2026,0,0.45,Locate Fees,Locate 100 CYPH @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,08/25/2026,0,0.45,Locate Fees,Locate 100 CYPH @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,08/26/2026,0,1.12,Locate Fees,Locate 100 YYGH @ 0.0112 per share,Equities
-ACCT0001,Sample Trader,USD,08/26/2026,0,1.12,Locate Fees,Locate 100 YYGH @ 0.0112 per share,Equities
-ACCT0001,Sample Trader,USD,08/26/2026,0,1.12,Locate Fees,Locate 100 YYGH @ 0.0112 per share,Equities
-ACCT0001,Sample Trader,USD,08/27/2026,0,0.99,Locate Fees,Locate 100 YAAS @ 0.0099 per share,Equities
-ACCT0001,Sample Trader,USD,08/27/2026,0,0.45,Locate Fees,Locate 100 YMT @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,08/27/2026,0,0.9,Locate Fees,Locate 200 CELU @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,08/27/2026,0,1.13,Locate Fees,Locate 100 WNW @ 0.0113 per share,Equities
-ACCT0001,Sample Trader,USD,08/28/2026,0,1,Locate Fees,Locate 100 NA @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,08/28/2026,0,1,Locate Fees,Locate 100 NA @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,08/28/2026,0,0.45,Locate Fees,Locate 100 AEMD @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,08/28/2026,0,5.9,Locate Fees,Locate 100 QNRX @ 0.059 per share,Equities
-ACCT0001,Sample Trader,USD,08/31/2026,0,1.5,Locate Fees,Locate 100 YDDL @ 0.015 per share,Equities
-ACCT0001,Sample Trader,USD,08/31/2026,0,3,Locate Fees,Locate 100 YDDL @ 0.03 per share,Equities
-ACCT0001,Sample Trader,USD,08/31/2026,0,0.45,Locate Fees,Locate 100 PETZ @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,09/01/2026,0,59,Software & Data,ZeroPro,Equities
-ACCT0001,Sample Trader,USD,09/01/2026,0,0.56,Locate Fees,Locate 100 SSM @ 0.0056 per share,Equities
-ACCT0001,Sample Trader,USD,09/01/2026,0,0.56,Locate Fees,Locate 100 SSM @ 0.0056 per share,Equities
-ACCT0001,Sample Trader,USD,09/01/2026,0,0.57,Locate Fees,Locate 100 SSM @ 0.0057 per share,Equities
-ACCT0001,Sample Trader,USD,09/02/2026,0,0.45,Locate Fees,Locate 100 LHAI @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,09/02/2026,0,0.45,Locate Fees,Locate 100 LHAI @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,09/02/2026,0,0.45,Locate Fees,Locate 100 LHAI @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,09/02/2026,0,1,Locate Fees,Locate 100 LHAI @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,09/02/2026,0,1,Locate Fees,Locate 100 LHAI @ 0.01 per share,Equities
-ACCT0001,Sample Trader,USD,09/03/2026,0,0.45,Locate Fees,Locate 100 MIMI @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,09/03/2026,0,0.45,Locate Fees,Locate 100 MIMI @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,09/03/2026,0,0.45,Locate Fees,Locate 100 MIMI @ 0.0045 per share,Equities
-ACCT0001,Sample Trader,USD,09/04/2026,0,2.5,Locate Fees,Locate 100 AKAN @ 0.025 per share,Equities
-ACCT0001,Sample Trader,USD,09/04/2026,0,2,Locate Fees,Locate 100 AKAN @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,06/01/2026,0,12,Locate Fees,Locate 2000 LUCY @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,06/01/2026,0,0.6,Locate Fees,Locate 200 ONFO @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,06/01/2026,0,6,Locate Fees,Single-Use 300 HOTH @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,06/01/2026,0,0.6,Locate Fees,Locate 300 SINT @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,06/04/2026,0,1.6,Locate & Borrow Charge,ONB 2000 LUCY ($0.0008) for 06/01,Equities
+ACCT0001,Sample Trader,USD,06/04/2026,0,36,Locate Fees,Locate 3000 CLRB @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,06/09/2026,0,3,Locate Fees,Locate 500 DRMA @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,06/10/2026,0,2.4,Locate Fees,Locate 200 VRAX @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,06/12/2026,0,0.4,Locate Fees,Locate 200 TIRX @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,06/12/2026,0,0.2,Locate Fees,Locate 100 TCBP @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,06/12/2026,0,4.5,Locate Fees,Locate 1500 ICCT @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,06/15/2026,0,6,Locate Fees,Locate 1500 YOSH @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,06/15/2026,0,0.3,Locate Fees,Locate 100 GNPX @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,06/16/2026,0,2.4,Locate Fees,Locate 200 GNPX @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,06/16/2026,0,0.4,Locate Fees,Locate 200 ENSC @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,06/18/2026,0,10,Locate Fees,Locate 500 QLGN @ 0.02 per share,Equities
+ACCT0001,Sample Trader,USD,06/18/2026,0,3,Locate Fees,Locate 1000 FRGT @ 0.003 per share,Equities
+ACCT0001,Sample Trader,USD,06/18/2026,0,2.4,Locate Fees,Locate 200 CLRB @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,06/18/2026,0.37,0,Locate Fees,Locate credit 50 CLRB @ 0.0074 per share,Equities
+ACCT0001,Sample Trader,USD,06/19/2026,0,2,Locate Fees,Locate 500 CLRB @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,06/19/2026,0,1.8,Locate Fees,Locate 300 DATS @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,06/23/2026,0,1.8,Locate Fees,Locate 300 KTTA @ 0.006 per share,Equities
+ACCT0001,Sample Trader,USD,06/23/2026,0,1.2,Locate Fees,Locate 300 BNZI @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,06/24/2026,0,9.6,Locate Fees,Locate 800 SNTG @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,06/24/2026,0,11.25,Locate Fees,Locate 1500 TNON @ 0.0075 per share,Equities
+ACCT0001,Sample Trader,USD,06/24/2026,0,0.8,Locate Fees,Locate 200 SXTC @ 0.004 per share,Equities
+ACCT0001,Sample Trader,USD,06/25/2026,0,9.6,Locate Fees,Locate 800 ONFO @ 0.012 per share,Equities
+ACCT0001,Sample Trader,USD,06/26/2026,0,0.4,Locate Fees,Single-Use 200 ZVSA @ 0.002 per share,Equities
+ACCT0001,Sample Trader,USD,06/30/2026,0,0.75,Locate Fees,Locate 100 MTNB @ 0.0075 per share,Equities

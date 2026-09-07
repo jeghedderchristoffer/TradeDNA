@@ -5,6 +5,12 @@ import path from 'node:path'
 import { cleanup, fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import { afterEach, beforeAll, describe, expect, it } from 'vitest'
 import App from './App'
+import { allocateCashEntries } from './domain/allocation'
+import { matchExecutions } from './domain/matcher'
+import { parseCsv } from './importers/csv'
+import { tradezero } from './importers/tradezero'
+import { tradezeroCash } from './importers/tradezero-cash'
+import { fmtDateKey, fmtMoney, fmtMonthKey, fmtNumber } from './lib/format'
 import { db } from './storage/db'
 import { clearAllData } from './storage/repo'
 
@@ -13,6 +19,30 @@ const tradesCsv = readFileSync(
   'utf8',
 )
 const cashCsv = readFileSync(path.resolve(__dirname, 'test-fixtures/tradezero-cash.csv'), 'utf8')
+
+// Expected values are derived from the fixture so regenerating it never breaks this test.
+const executions = tradezero.parse(parseCsv(tradesCsv).rows, { importBatchId: 'x' }).executions
+const cashEntries = tradezeroCash.parse(parseCsv(cashCsv).rows, { importBatchId: 'y' }).cashEntries
+const trades = matchExecutions(executions).trades
+const sum = (xs: number[]) => xs.reduce((a, b) => a + b, 0)
+const F = {
+  execCount: fmtNumber(executions.length),
+  cashCount: fmtNumber(cashEntries.length),
+  commissions: fmtMoney(sum(executions.map((e) => e.fees))),
+  net: fmtMoney(sum(trades.map((t) => t.netPnl)), { sign: true }),
+  gross: fmtMoney(sum(trades.map((t) => t.grossPnl)), { sign: true }),
+  all: fmtNumber(trades.length),
+  longs: fmtNumber(trades.filter((t) => t.direction === 'long').length),
+  shorts: fmtNumber(trades.filter((t) => t.direction === 'short').length),
+  pages: fmtNumber(Math.ceil(trades.length / 50)),
+  latestDay: trades
+    .map((t) => t.exitDate!)
+    .sort()
+    .at(-1)!,
+  shortWithLocate: allocateCashEntries(trades, cashEntries).trades.find((t) => t.locateFees > 0)!
+    .symbol,
+}
+const latestMonth = F.latestDay.slice(0, 7)
 
 beforeAll(() => {
   // jsdom lacks these browser APIs used by the theme effect and Recharts.
@@ -45,7 +75,11 @@ async function importTrades() {
     target: { files: [new File([tradesCsv], 'TradeHistory.csv', { type: 'text/csv' })] },
   })
   fireEvent.click(
-    await screen.findByRole('button', { name: /Import 3,330 executions/ }, { timeout: 10000 }),
+    await screen.findByRole(
+      'button',
+      { name: `Import ${F.execCount} executions` },
+      { timeout: 10000 },
+    ),
   )
   await screen.findByText('Net P&L', {}, { timeout: 10000 })
 }
@@ -68,12 +102,12 @@ describe('TradeDNA end to end (jsdom)', () => {
     })
 
     await screen.findByText('New executions', {}, { timeout: 10000 })
-    expect(screen.getByText('$2,824.94')).toBeTruthy() // commissions in preview
-    fireEvent.click(await screen.findByRole('button', { name: /Import 3,330 executions/ }))
+    expect(screen.getByText(F.commissions)).toBeTruthy() // commissions in preview
+    fireEvent.click(await screen.findByRole('button', { name: `Import ${F.execCount} executions` }))
 
     await screen.findByText('Net P&L', {}, { timeout: 10000 })
-    await waitFor(() => expect(screen.getAllByText('+$40.59').length).toBeGreaterThan(0))
-    expect(await db.executions.count()).toBe(3330)
+    await waitFor(() => expect(screen.getAllByText(F.net).length).toBeGreaterThan(0))
+    expect(await db.executions.count()).toBe(executions.length)
     expect(await db.importBatches.count()).toBe(1)
   })
 
@@ -91,29 +125,31 @@ describe('TradeDNA end to end (jsdom)', () => {
     })
     await screen.findByText(/read as one/, {}, { timeout: 10000 })
     expect(screen.getByText('Matched to trades')).toBeTruthy()
-    fireEvent.click(await screen.findByRole('button', { name: /Import 622 entries/ }))
+    fireEvent.click(await screen.findByRole('button', { name: `Import ${F.cashCount} entries` }))
 
     // lands on the Fees page
     await screen.findByText('Total cost of trading', {}, { timeout: 10000 })
     expect(screen.getByText('Bottom line')).toBeTruthy()
     expect(screen.getByText('Locate efficiency')).toBeTruthy()
     expect(screen.getByText('Most expensive symbols')).toBeTruthy()
-    expect(await db.cashEntries.count()).toBe(622)
+    expect(await db.cashEntries.count()).toBe(cashEntries.length)
 
     // the dashboard net now includes locates and borrow
     await go('#/dashboard')
     await screen.findByText('Net P&L')
-    await waitFor(() => expect(screen.queryAllByText('+$40.59')).toHaveLength(0))
+    await waitFor(() => expect(screen.queryAllByText(F.net)).toHaveLength(0))
 
     // a short trade shows its locate line in the fee breakdown
     await go('#/trades')
     fireEvent.change(await screen.findByLabelText('Filter by symbol'), {
-      target: { value: 'MOGO' },
+      target: { value: F.shortWithLocate },
     })
+    fireEvent.click(screen.getByRole('tab', { name: 'Short' }))
+    await screen.findByText(/^\d+ trades/)
     const table = await screen.findByRole('table')
     fireEvent.click(within(table).getAllByRole('row')[1]!)
     await screen.findByText('Fee breakdown')
-    expect(await screen.findByText('Locate')).toBeTruthy()
+    expect((await screen.findAllByText('Locate')).length).toBeGreaterThan(0)
   })
 
   it('re-importing the same file finds only duplicates', async () => {
@@ -142,7 +178,7 @@ describe('TradeDNA end to end (jsdom)', () => {
 
     fireEvent.click(screen.getByRole('tab', { name: 'Gross' }))
     await screen.findByText('Gross P&L')
-    await waitFor(() => expect(screen.getAllByText('+$2,865.53').length).toBeGreaterThan(0))
+    await waitFor(() => expect(screen.getAllByText(F.gross).length).toBeGreaterThan(0))
     fireEvent.click(screen.getByRole('tab', { name: 'Net' }))
     await screen.findByText('Net P&L')
 
@@ -151,28 +187,29 @@ describe('TradeDNA end to end (jsdom)', () => {
     const table = await screen.findByRole('table')
     // paginated: 50 per page + header row
     expect(within(table).getAllByRole('row')).toHaveLength(51)
-    expect(screen.getAllByText('Page 1 of 23').length).toBeGreaterThan(0)
+    expect(screen.getAllByText(`Page 1 of ${F.pages}`).length).toBeGreaterThan(0)
     fireEvent.click(screen.getAllByRole('button', { name: 'Next page' })[0]!)
-    await screen.findAllByText('Page 2 of 23')
+    await screen.findAllByText(`Page 2 of ${F.pages}`)
     fireEvent.click(within(table).getAllByRole('row')[1]!)
     await screen.findByText('Fee breakdown')
 
     // global Long / Short filter in the navbar scopes the page
     fireEvent.click(screen.getByRole('tab', { name: 'Short' }))
-    await screen.findByText(/^463 trades/)
+    await screen.findByText(new RegExp(`^${F.shorts} trades`))
     fireEvent.click(screen.getByRole('tab', { name: 'Long' }))
-    await screen.findByText(/^679 trades/)
+    await screen.findByText(new RegExp(`^${F.longs} trades`))
     fireEvent.click(screen.getByRole('tab', { name: 'All' }))
-    await screen.findByText(/^1,142 trades/)
+    await screen.findByText(new RegExp(`^${F.all} trades`))
 
     await go('#/calendar')
-    await screen.findByRole('heading', { name: 'September 2026' }, { timeout: 10000 })
+    await screen.findByRole('heading', { name: fmtMonthKey(latestMonth) }, { timeout: 10000 })
     expect(screen.getByText('Best day')).toBeTruthy()
 
     // deep link to a day (what the dashboard does when a day is clicked)
-    await go('#/calendar/2026-09?day=2026-09-04')
-    await screen.findByText('Friday, September 4, 2026', {}, { timeout: 10000 })
-    expect(screen.getAllByText('AKAN').length).toBeGreaterThan(0)
+    await go(`#/calendar/${latestMonth}?day=${F.latestDay}`)
+    await screen.findByText(fmtDateKey(F.latestDay, 'EEEE, MMMM d, yyyy'), {}, { timeout: 10000 })
+    const daySymbol = trades.find((t) => t.exitDate === F.latestDay)!.symbol
+    expect(screen.getAllByText(daySymbol).length).toBeGreaterThan(0)
 
     await go('#/analytics')
     await screen.findByText('Hold time')
@@ -188,19 +225,16 @@ describe('TradeDNA end to end (jsdom)', () => {
     expect(screen.getByText('Only commissions so far')).toBeTruthy()
 
     await go('#/settings')
-    await screen.findByText(/Export backup \(3,330 executions\)/)
+    await screen.findByText(`Export backup (${F.execCount} executions)`)
     expect(screen.getByText(/TradeZero Trade History/)).toBeTruthy()
   })
 
   it('restores a backup from the start screen', async () => {
-    const { tradezero } = await import('./importers/tradezero')
-    const { parseCsv } = await import('./importers/csv')
     const backup = {
       app: 'tradedna',
       schemaVersion: 2,
       exportedAt: new Date().toISOString(),
-      executions: tradezero.parse(parseCsv(tradesCsv).rows.slice(0, 40), { importBatchId: 'b' })
-        .executions,
+      executions: executions.slice(0, 40),
       cashEntries: [],
       importBatches: [],
       settings: { pnlBasis: 'gross' },

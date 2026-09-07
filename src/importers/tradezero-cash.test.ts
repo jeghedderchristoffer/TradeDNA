@@ -19,13 +19,26 @@ const sum = (xs: number[]) => xs.reduce((a, b) => a + b, 0)
 
 describe('TradeZero cash journal importer', () => {
   const parsed = parseCsv(cashCsv)
+  const rows = parsed.rows
+  const ofType = (t: string) => rows.filter((r) => r['Type'] === t)
+  const costOfRows = (rs: Record<string, string>[]) =>
+    sum(rs.map((r) => Number(r['Withdraw']) - Number(r['Deposit'])))
+  const locateCost = costOfRows(ofType('Locate Fees'))
+  const borrowCost = costOfRows(ofType('Locate & Borrow Charge'))
+  const softwareCost = costOfRows(ofType('Software & Data'))
+  const bankFee = costOfRows(ofType('Banking').filter((r) => /fee/i.test(r['Note']!)))
+  const deposits = sum(
+    ofType('Banking')
+      .filter((r) => !/fee/i.test(r['Note']!))
+      .map((r) => Number(r['Deposit'])),
+  )
 
   it('is auto-detected and distinct from the trade history', () => {
     expect(detectImporter(parsed.headers)?.id).toBe('tradezero-cash')
     expect(detectImporter(parseCsv(tradesCsv).headers)?.id).toBe('tradezero-trades')
   })
 
-  it('classifies every note format seen in the export', () => {
+  it('classifies every note format seen in real exports', () => {
     expect(classify('Locate Fees', 'Locate 400 MOGO @ 0.02 per share', -8, '2025-07-02')).toEqual({
       category: 'locate',
       kind: 'locate',
@@ -121,31 +134,42 @@ describe('TradeZero cash journal importer', () => {
   })
 
   it('imports the whole journal with the broker totals', () => {
-    const { cashEntries, warnings, skippedRows } = tradezeroCash.parse(parsed.rows, {
-      importBatchId: 'c',
-    })
+    const { cashEntries, warnings, skippedRows } = tradezeroCash.parse(rows, { importBatchId: 'c' })
     expect(skippedRows).toBe(0)
     expect(warnings).toEqual([])
-    expect(cashEntries).toHaveLength(622)
+    expect(cashEntries).toHaveLength(rows.length)
+    expect(rows.length).toBeGreaterThan(200)
 
     const byCat = (c: string) => cashEntries.filter((e) => e.category === c)
-    expect(byCat('locate')).toHaveLength(575)
-    expect(sum(byCat('locate').map(costOf))).toBeCloseTo(2012.73 - 62.23, 2)
-    expect(byCat('borrow')).toHaveLength(29)
-    expect(sum(byCat('borrow').map(costOf))).toBeCloseTo(302.6 - 24.48, 2)
-    expect(byCat('software')).toHaveLength(16)
-    expect(sum(byCat('software').map(costOf))).toBeCloseTo(885 - 59, 2)
-    expect(byCat('banking')).toHaveLength(2)
+    expect(byCat('locate')).toHaveLength(ofType('Locate Fees').length)
+    expect(sum(byCat('locate').map(costOf))).toBeCloseTo(locateCost, 2)
+    expect(byCat('borrow')).toHaveLength(ofType('Locate & Borrow Charge').length)
+    expect(sum(byCat('borrow').map(costOf))).toBeCloseTo(borrowCost, 2)
+    expect(byCat('software')).toHaveLength(ofType('Software & Data').length)
+    expect(sum(byCat('software').map(costOf))).toBeCloseTo(softwareCost, 2)
+    expect(byCat('banking')).toHaveLength(ofType('Banking').length)
 
-    // every locate/borrow row carries a symbol, so it can be attributed
+    // all locate note variants appear and every locate/borrow row carries a symbol
+    const kinds = new Set(cashEntries.map((e) => e.kind))
+    for (const k of [
+      'locate',
+      'locate-credit',
+      'single-use',
+      'pre-borrow',
+      'overnight-borrow',
+      'platform',
+      'deposit',
+      'bank-fee',
+    ])
+      expect(kinds.has(k as never)).toBe(true)
     expect(
       cashEntries.filter((e) => (e.category === 'locate' || e.category === 'borrow') && !e.symbol),
     ).toEqual([])
     expect(byCat('borrow').every((e) => e.forDate)).toBe(true)
 
     // ids are stable and unique, even for identical repeated rows
-    const again = tradezeroCash.parse(parsed.rows, { importBatchId: 'd' }).cashEntries
-    expect(new Set(cashEntries.map((e) => e.id)).size).toBe(622)
+    const again = tradezeroCash.parse(rows, { importBatchId: 'd' }).cashEntries
+    expect(new Set(cashEntries.map((e) => e.id)).size).toBe(rows.length)
     expect(again.map((e) => e.id)).toEqual(cashEntries.map((e) => e.id))
   })
 
@@ -153,19 +177,19 @@ describe('TradeZero cash journal importer', () => {
     const trades = matchExecutions(
       tradezero.parse(parseCsv(tradesCsv).rows, { importBatchId: 't' }).executions,
     ).trades
-    const entries = tradezeroCash.parse(parsed.rows, { importBatchId: 'c' }).cashEntries
+    const entries = tradezeroCash.parse(rows, { importBatchId: 'c' }).cashEntries
     const a = allocateCashEntries(trades, entries)
 
-    expect(a.overhead).toHaveLength(18) // 16 software + 2 banking
-    expect(a.allocatedCount).toBeGreaterThan(520)
-    expect(a.unallocated.length).toBeLessThan(60)
+    expect(a.overhead).toHaveLength(ofType('Software & Data').length + ofType('Banking').length)
+    expect(a.allocatedCount).toBeGreaterThan(entries.length * 0.8)
     // only locates can be "unused"; every borrow charge belongs to a held position
-    expect(a.unallocated.filter((e) => e.category === 'borrow')).toEqual([])
+    expect(a.unallocated.length).toBeGreaterThan(0)
+    expect(a.unallocated.every((e) => e.category === 'locate')).toBe(true)
 
     const locate = sum(a.trades.map((t) => t.locateFees))
     const unused = sum(a.unallocated.map(costOf))
-    expect(locate + unused).toBeCloseTo(2012.73 - 62.23 - 0, 1)
-    expect(sum(a.trades.map((t) => t.borrowFees))).toBeCloseTo(302.6 - 24.48, 1)
+    expect(locate + unused).toBeCloseTo(locateCost, 1)
+    expect(sum(a.trades.map((t) => t.borrowFees))).toBeCloseTo(borrowCost, 1)
     // only shorts carry locate/borrow costs
     expect(
       a.trades
@@ -173,25 +197,31 @@ describe('TradeZero cash journal importer', () => {
         .every((t) => t.locateFees === 0 && t.borrowFees === 0),
     ).toBe(true)
     // fees & net are restated on the trade
-    const withLocate = a.trades.find((t) => t.locateFees > 0)!
-    expect(withLocate.fees).toBeCloseTo(
-      withLocate.tradingFees + withLocate.locateFees + withLocate.borrowFees,
+    const withBoth = a.trades.find((t) => t.locateFees > 0 && t.borrowFees > 0)!
+    expect(withBoth).toBeTruthy()
+    expect(withBoth.isOvernight).toBe(true)
+    expect(withBoth.fees).toBeCloseTo(
+      withBoth.tradingFees + withBoth.locateFees + withBoth.borrowFees,
       6,
     )
-    expect(withLocate.netPnl).toBeCloseTo(withLocate.grossPnl - withLocate.fees, 6)
-    expect(withLocate.feeBreakdown['Locate']).toBeCloseTo(withLocate.locateFees, 6)
+    expect(withBoth.netPnl).toBeCloseTo(withBoth.grossPnl - withBoth.fees, 6)
+    expect(withBoth.feeBreakdown['Locate']).toBeCloseTo(withBoth.locateFees, 6)
+    expect(withBoth.feeBreakdown['Borrow']).toBeCloseTo(withBoth.borrowFees, 6)
 
+    const tradeRows = parseCsv(tradesCsv).rows
+    const grossTotal = sum(tradeRows.map((r) => Number(r['Gross Proceeds'])))
+    const commTotal = grossTotal - sum(tradeRows.map((r) => Number(r['Net Proceeds'])))
     const costs = computeCosts(a.trades, [...a.unallocated, ...a.overhead])
-    expect(costs.grossPnl).toBeCloseTo(2865.53, 2)
-    expect(costs.tradingFees).toBeCloseTo(2824.94, 2)
-    expect(costs.software).toBeCloseTo(826, 2)
-    expect(costs.bankFees).toBeCloseTo(15, 2)
-    expect(costs.deposits).toBeCloseTo(4500, 2)
+    expect(costs.grossPnl).toBeCloseTo(grossTotal, 2)
+    expect(costs.tradingFees).toBeCloseTo(commTotal, 2)
+    expect(costs.software).toBeCloseTo(softwareCost, 2)
+    expect(costs.bankFees).toBeCloseTo(bankFee, 2)
+    expect(costs.deposits).toBeCloseTo(deposits, 2)
     // total costs = everything the broker charged, regardless of attribution
     expect(costs.totalCosts).toBeCloseTo(
-      2824.94 + (2012.73 - 62.23) + (302.6 - 24.48) + 826 + 15,
+      commTotal + locateCost + borrowCost + softwareCost + bankFee,
       1,
     )
-    expect(costs.bottomLine).toBeCloseTo(2865.53 - costs.totalCosts, 1)
+    expect(costs.bottomLine).toBeCloseTo(grossTotal - costs.totalCosts, 1)
   })
 })

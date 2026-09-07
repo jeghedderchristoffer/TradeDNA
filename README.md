@@ -67,7 +67,8 @@ src/
   storage/       Dexie (IndexedDB) schema, repository functions, React hooks
   features/      screens: onboarding, import, dashboard, calendar, trades, analytics, settings
   components/    UI primitives and chart components
-  test-fixtures/ a real (account-scrubbed) TradeZero export used by the tests
+  test-fixtures/ synthetic TradeZero exports used by the tests (regenerate: npm run fixtures)
+scripts/         generate-fixtures.mjs — seeded generator for the fixtures, no real trades
 ```
 
 Executions and cash entries are the only things persisted. Trades, and the attribution of cash
