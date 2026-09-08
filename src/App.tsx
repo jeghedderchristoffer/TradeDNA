@@ -10,6 +10,9 @@ import { FeesPage } from '@/features/fees/fees-page'
 import { ImportPage } from '@/features/import/import-page'
 import { OnboardingPage } from '@/features/onboarding/onboarding-page'
 import { SettingsPage } from '@/features/settings/settings-page'
+import { SymbolPage } from '@/features/symbols/symbol-page'
+import { SymbolsPage } from '@/features/symbols/symbols-page'
+import { TradePage } from '@/features/trades/trade-page'
 import { TradesPage } from '@/features/trades/trades-page'
 import { useExecutions } from '@/storage/hooks'
 
@@ -72,6 +75,30 @@ const router = createHashRouter([
         element: (
           <RequireData>
             <TradesPage />
+          </RequireData>
+        ),
+      },
+      {
+        path: '/trades/:tradeId',
+        element: (
+          <RequireData>
+            <TradePage />
+          </RequireData>
+        ),
+      },
+      {
+        path: '/symbols',
+        element: (
+          <RequireData>
+            <SymbolsPage />
+          </RequireData>
+        ),
+      },
+      {
+        path: '/symbols/:symbol',
+        element: (
+          <RequireData>
+            <SymbolPage />
           </RequireData>
         ),
       },

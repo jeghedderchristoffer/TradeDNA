@@ -77,6 +77,24 @@ export function bySymbol(trades: Trade[], basis: PnlBasis): Bucket[] {
   return groupTrades(trades, (t) => t.symbol, basis).sort((a, b) => b.pnl - a.pnl)
 }
 
+/**
+ * One bucket per tag, best P&L first. A trade with several tags is counted in each of them, so
+ * the buckets overlap and do not sum to the total. Untagged trades are left out.
+ */
+export function byTag(trades: Trade[], basis: PnlBasis): Bucket[] {
+  const map = new Map<string, Trade[]>()
+  for (const t of trades) {
+    for (const tag of t.tags ?? []) {
+      const list = map.get(tag)
+      if (list) list.push(t)
+      else map.set(tag, [t])
+    }
+  }
+  return [...map.entries()]
+    .map(([tag, ts]) => makeBucket(tag, tag, ts, basis))
+    .sort((a, b) => b.pnl - a.pnl || b.count - a.count)
+}
+
 export function byDirection(trades: Trade[], basis: PnlBasis): Bucket[] {
   return groupTrades(
     trades,

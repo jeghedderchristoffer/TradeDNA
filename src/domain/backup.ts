@@ -1,6 +1,7 @@
 import { z } from 'zod'
 import { CashEntrySchema } from './cash-entry'
 import { BROKER_IDS, ExecutionSchema } from './execution'
+import { TradeNoteSchema } from './trade-note'
 
 export const ImportBatchSchema = z.object({
   id: z.string(),
@@ -26,12 +27,12 @@ export type Settings = z.infer<typeof SettingsSchema>
 export type DirectionFilter = Settings['direction']
 export const DEFAULT_SETTINGS: Settings = { pnlBasis: 'net', theme: 'system', direction: 'all' }
 
-/** v1: executions only. v2: + cashEntries, importBatches.kind. */
-export const BACKUP_SCHEMA_VERSION = 2
+/** v1: executions only. v2: + cashEntries, importBatches.kind. v3: + tradeNotes. */
+export const BACKUP_SCHEMA_VERSION = 3
 
 /**
- * The portable backup file. Everything the app knows is derivable from executions and cash
- * entries, so this is the only thing a user ever needs to keep.
+ * The portable backup file. Everything the app knows is derivable from executions, cash entries
+ * and the trader's own notes, so this is the only thing a user ever needs to keep.
  */
 export const BackupSchema = z.object({
   app: z.literal('tradedna'),
@@ -40,6 +41,7 @@ export const BackupSchema = z.object({
   executions: z.array(ExecutionSchema),
   cashEntries: z.array(CashEntrySchema).default([]),
   importBatches: z.array(ImportBatchSchema).default([]),
+  tradeNotes: z.array(TradeNoteSchema).default([]),
   settings: SettingsSchema.partial().default({}),
 })
 export type Backup = z.infer<typeof BackupSchema>

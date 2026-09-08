@@ -55,6 +55,10 @@ export interface Trade {
   holdMs?: number
   executionIds: string[]
   fills: TradeFill[]
+  /** The trader's tags, attached from the notes store (see trade-note.ts). Absent when untagged. */
+  tags?: string[]
+  /** The trader's free-text note, trimmed. Absent when empty. */
+  note?: string
 }
 
 export function isWinner(t: Trade, basis: PnlBasis = 'net'): boolean {

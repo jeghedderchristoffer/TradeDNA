@@ -136,19 +136,25 @@ describe('TradeDNA end to end (jsdom)', () => {
 
     // the dashboard net now includes locates and borrow
     await go('#/dashboard')
-    await screen.findByText('Net P&L')
+    await screen.findByText('Net P&L', {}, { timeout: 10000 })
     await waitFor(() => expect(screen.queryAllByText(F.net)).toHaveLength(0))
 
     // a short trade shows its locate line in the fee breakdown
     await go('#/trades')
-    fireEvent.change(await screen.findByLabelText('Filter by symbol'), {
+    fireEvent.change(await screen.findByLabelText('Filter by symbol', {}, { timeout: 10000 }), {
       target: { value: F.shortWithLocate },
     })
     fireEvent.click(screen.getByRole('tab', { name: 'Short' }))
-    await screen.findByText(/^\d+ trades/)
+    // the direction filter is a setting written to IndexedDB: wait until the list reflects it
+    const shortsInSymbol = trades.filter(
+      (t) => t.symbol === F.shortWithLocate && t.direction === 'short',
+    ).length
+    await screen.findByText(new RegExp(`^${fmtNumber(shortsInSymbol)} trades`))
     const table = await screen.findByRole('table')
+    // opening the newest short in that symbol shows its locate line
     fireEvent.click(within(table).getAllByRole('row')[1]!)
     await screen.findByText('Fee breakdown')
+    expect(screen.getByRole('heading', { level: 1 }).textContent).toBe(F.shortWithLocate)
     expect((await screen.findAllByText('Locate')).length).toBeGreaterThan(0)
   })
 
@@ -183,15 +189,49 @@ describe('TradeDNA end to end (jsdom)', () => {
     await screen.findByText('Net P&L')
 
     await go('#/trades')
-    await screen.findByLabelText('Filter by symbol')
+    await screen.findByLabelText('Filter by symbol', {}, { timeout: 10000 })
     const table = await screen.findByRole('table')
     // paginated: 50 per page + header row
     expect(within(table).getAllByRole('row')).toHaveLength(51)
     expect(screen.getAllByText(`Page 1 of ${F.pages}`).length).toBeGreaterThan(0)
     fireEvent.click(screen.getAllByRole('button', { name: 'Next page' })[0]!)
     await screen.findAllByText(`Page 2 of ${F.pages}`)
+
+    // clicking a row opens the trade's page
     fireEvent.click(within(table).getAllByRole('row')[1]!)
     await screen.findByText('Fee breakdown')
+    expect(screen.getByText('Notes & tags')).toBeTruthy()
+    expect(screen.getByText(/history$/)).toBeTruthy()
+
+    // tag it and write a note; both persist to IndexedDB
+    const tagInput = screen.getByLabelText('Add tag')
+    fireEvent.change(tagInput, { target: { value: 'FOMO' } })
+    fireEvent.keyDown(tagInput, { key: 'Enter' })
+    await screen.findByText('Saved')
+    fireEvent.change(screen.getByLabelText('Note'), { target: { value: 'Chased the open' } })
+    await waitFor(
+      async () => {
+        const notes = await db.tradeNotes.toArray()
+        expect(notes).toHaveLength(1)
+        expect(notes[0]!.tags).toEqual(['fomo'])
+        expect(notes[0]!.note).toBe('Chased the open')
+      },
+      { timeout: 3000 },
+    )
+
+    // back on the list, the tag is a filter chip; selecting it leaves the one tagged trade
+    await go('#/trades')
+    await screen.findByLabelText('Filter by symbol', {}, { timeout: 10000 })
+    fireEvent.click(await screen.findByRole('button', { name: /^fomo/ }))
+    await screen.findByText(/^1 trades/)
+    // chip + the badge on the row itself
+    expect(screen.getAllByText('fomo')).toHaveLength(2)
+    fireEvent.click(screen.getByRole('button', { name: /^fomo/ }))
+    await screen.findByText(new RegExp(`^${F.all} trades`))
+    fireEvent.click(screen.getByRole('button', { name: 'untagged' }))
+    await screen.findByText(new RegExp(`^${fmtNumber(trades.length - 1)} trades`))
+    fireEvent.click(screen.getByRole('button', { name: 'untagged' }))
+    await screen.findByText(new RegExp(`^${F.all} trades`))
 
     // global Long / Short filter in the navbar scopes the page
     fireEvent.click(screen.getByRole('tab', { name: 'Short' }))
@@ -219,6 +259,21 @@ describe('TradeDNA end to end (jsdom)', () => {
     expect(screen.getByText('If you stopped opening trades at…')).toBeTruthy()
     expect(screen.getByText('Consistency')).toBeTruthy()
     expect(screen.getByText('11:00')).toBeTruthy()
+    // the tag from above has its own analytics row
+    expect(screen.getByText('By tag')).toBeTruthy()
+    expect(screen.getByText('fomo')).toBeTruthy()
+
+    // per-symbol analytics
+    await go('#/symbols')
+    await screen.findByText('Symbols traded', {}, { timeout: 10000 })
+    const symbolsTable = await screen.findByRole('table')
+    const firstSymbol = within(symbolsTable).getAllByRole('row')[1]!
+    const symbolName = within(firstSymbol).getAllByRole('cell')[0]!.textContent!
+    fireEvent.click(firstSymbol)
+    await screen.findByRole('heading', { name: symbolName })
+    expect(screen.getByText('By direction & hold')).toBeTruthy()
+    expect(screen.getByText('Equity curve')).toBeTruthy()
+    expect(screen.getByText(/trades all-time/)).toBeTruthy()
 
     await go('#/fees')
     await screen.findByText('Total cost of trading')
