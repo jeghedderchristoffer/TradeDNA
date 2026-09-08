@@ -37,9 +37,9 @@ export function SettingsPage() {
         <CardHeader>
           <CardTitle>Backup</CardTitle>
           <CardDescription>
-            A single JSON file with every execution and cash entry you imported. Keep it somewhere
-            safe: clearing your browser data deletes the journal, and the backup is the only way to
-            get it back.
+            A single JSON file with every execution and cash entry you imported, plus your tags and
+            notes. Keep it somewhere safe: clearing your browser data deletes the journal, and the
+            backup is the only way to get it back.
           </CardDescription>
         </CardHeader>
         <CardContent className="flex flex-wrap gap-2">
@@ -208,8 +208,8 @@ export function SettingsPage() {
         <CardHeader>
           <CardTitle>Delete everything</CardTitle>
           <CardDescription>
-            Removes all executions, cash entries, imports and settings from this browser. Export a
-            backup first.
+            Removes all executions, cash entries, imports, notes, tags and settings from this
+            browser. Export a backup first.
           </CardDescription>
         </CardHeader>
         <CardContent className="flex flex-wrap gap-2">

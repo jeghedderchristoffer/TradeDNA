@@ -8,6 +8,7 @@ import {
 } from '@/domain/backup'
 import type { CashEntry } from '@/domain/cash-entry'
 import type { Execution } from '@/domain/execution'
+import { hasContent, normalizeTags, type TradeNote } from '@/domain/trade-note'
 import { db, type TradeDnaDb } from './db'
 
 export interface CommitResult {
@@ -78,14 +79,45 @@ export async function deleteImportBatch(batchId: string, database: TradeDnaDb = 
 export async function clearAllData(database: TradeDnaDb = db) {
   await database.transaction(
     'rw',
-    [database.executions, database.cashEntries, database.importBatches, database.settings],
+    [
+      database.executions,
+      database.cashEntries,
+      database.importBatches,
+      database.tradeNotes,
+      database.settings,
+    ],
     async () => {
       await database.executions.clear()
       await database.cashEntries.clear()
       await database.importBatches.clear()
+      await database.tradeNotes.clear()
       await database.settings.clear()
     },
   )
+}
+
+/**
+ * Save the trader's tags and note for a trade. Tags are normalized; a note with no tags and
+ * no text is deleted rather than stored empty. Deleting an import leaves notes in place so they
+ * come back if the trades are re-imported.
+ */
+export async function saveTradeNote(
+  tradeId: string,
+  input: { tags: string[]; note: string },
+  database: TradeDnaDb = db,
+): Promise<TradeNote | undefined> {
+  const row: TradeNote = {
+    tradeId,
+    tags: normalizeTags(input.tags),
+    note: input.note,
+    updatedAt: Date.now(),
+  }
+  if (!hasContent(row)) {
+    await database.tradeNotes.delete(tradeId)
+    return undefined
+  }
+  await database.tradeNotes.put(row)
+  return row
 }
 
 export async function getSettings(database: TradeDnaDb = db): Promise<Settings> {
@@ -104,10 +136,11 @@ export async function setSetting<K extends keyof Settings>(
 }
 
 export async function buildBackup(database: TradeDnaDb = db): Promise<Backup> {
-  const [executions, cashEntries, importBatches, settings] = await Promise.all([
+  const [executions, cashEntries, importBatches, tradeNotes, settings] = await Promise.all([
     database.executions.toArray(),
     database.cashEntries.toArray(),
     database.importBatches.toArray(),
+    database.tradeNotes.toArray(),
     getSettings(database),
   ])
   return {
@@ -117,6 +150,7 @@ export async function buildBackup(database: TradeDnaDb = db): Promise<Backup> {
     executions,
     cashEntries,
     importBatches,
+    tradeNotes,
     settings,
   }
 }
@@ -140,7 +174,10 @@ export interface RestoreResult {
   duplicates: number
 }
 
-/** Restore a validated backup. `replace` wipes current data first; `merge` dedupes by id. */
+/**
+ * Restore a validated backup. `replace` wipes current data first; `merge` dedupes by id and,
+ * for notes, keeps whichever side was edited most recently.
+ */
 export async function restoreBackup(
   backup: Backup,
   mode: RestoreMode,
@@ -148,18 +185,33 @@ export async function restoreBackup(
 ): Promise<RestoreResult> {
   return database.transaction(
     'rw',
-    [database.executions, database.cashEntries, database.importBatches, database.settings],
+    [
+      database.executions,
+      database.cashEntries,
+      database.importBatches,
+      database.tradeNotes,
+      database.settings,
+    ],
     async () => {
       if (mode === 'replace') {
         await database.executions.clear()
         await database.cashEntries.clear()
         await database.importBatches.clear()
+        await database.tradeNotes.clear()
       }
       const ex = await partitionByExisting(backup.executions, database)
       const cash = await partitionCashByExisting(backup.cashEntries, database)
       if (ex.fresh.length) await database.executions.bulkAdd(ex.fresh)
       if (cash.fresh.length) await database.cashEntries.bulkAdd(cash.fresh)
       await database.importBatches.bulkPut(backup.importBatches)
+      if (backup.tradeNotes.length) {
+        const existing = await database.tradeNotes.bulkGet(backup.tradeNotes.map((n) => n.tradeId))
+        const newer = backup.tradeNotes.filter((n, i) => {
+          const cur = existing[i]
+          return hasContent(n) && (!cur || cur.updatedAt <= n.updatedAt)
+        })
+        if (newer.length) await database.tradeNotes.bulkPut(newer)
+      }
       for (const [key, value] of Object.entries(backup.settings)) {
         if (value !== undefined) await database.settings.put({ key, value })
       }

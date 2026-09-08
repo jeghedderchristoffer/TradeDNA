@@ -1,7 +1,7 @@
 import { PageSkeleton } from '@/components/ui/skeleton'
 import { ArrowRight } from 'lucide-react'
 import { useMemo } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { BucketBars } from '@/components/charts/bucket-bars'
 import { HBarList } from '@/components/charts/hbar-list'
 import { Histogram } from '@/components/charts/histogram'
@@ -19,6 +19,7 @@ import {
   byWeek,
   byPriceBand,
   byShareBand,
+  byTag,
   byValueBand,
   computeConsistency,
   computeRisk,
@@ -29,24 +30,26 @@ import {
   bySymbol,
   byWeekday,
   computeSummary,
-  type Bucket,
 } from '@/domain/metrics'
-import type { PnlBasis } from '@/domain/trade'
 import {
-  fmtDuration,
   fmtMoney,
   fmtMonthKey,
   fmtNumber,
   fmtPct,
   fmtRatio,
+  fmtDuration,
   pnlClass,
 } from '@/lib/format'
 import { cn } from '@/lib/utils'
 import { RangeFilter } from '@/features/shared/range-filter'
 import { useJournal } from '@/features/shared/use-journal'
+import { symbolPath } from '@/features/trades/trades-table'
+import { BucketTable } from './bucket-table'
 
 export function AnalyticsPage() {
+  const navigate = useNavigate()
   const { trades, basis, loading } = useJournal()
+  const tags = useMemo(() => byTag(trades, basis), [trades, basis])
   const summary = useMemo(() => computeSummary(trades, basis), [trades, basis])
   const dirs = useMemo(() => byDirection(trades, basis), [trades, basis])
   const holds = useMemo(() => byHoldType(trades, basis), [trades, basis])
@@ -375,16 +378,46 @@ export function AnalyticsPage() {
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-base font-semibold">Symbols</h2>
+        <h2 className="text-base font-semibold">Tags</h2>
+        <Card>
+          <CardHeader>
+            <CardTitle>By tag</CardTitle>
+            <CardDescription>
+              {tags.length
+                ? `${basis} P&L per tag · a trade with several tags counts in each · click a row to list those trades`
+                : 'Open any trade and tag it (setup, mistake, market condition…) to see which patterns make or lose money.'}
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="p-0">
+            <BucketTable
+              buckets={tags}
+              basis={basis}
+              empty="No tagged trades yet"
+              onSelect={(b) => navigate(`/trades?tag=${encodeURIComponent(b.key)}`)}
+            />
+          </CardContent>
+        </Card>
+      </section>
+
+      <section className="space-y-3">
+        <div className="flex items-center justify-between">
+          <h2 className="text-base font-semibold">Symbols</h2>
+          <Link to="/symbols" className={buttonVariants({ variant: 'ghost', size: 'sm' })}>
+            All symbols <ArrowRight className="size-3.5" />
+          </Link>
+        </div>
         <div className="grid gap-4 lg:grid-cols-2">
           <Card>
             <CardHeader>
               <CardTitle>Best symbols</CardTitle>
-              <CardDescription>{basis} P&L · trade count</CardDescription>
+              <CardDescription>
+                {basis} P&L · trade count · click for the symbol's page
+              </CardDescription>
             </CardHeader>
             <CardContent>
               <HBarList
                 signed
+                onSelect={(it) => navigate(symbolPath(it.key))}
                 items={top.map((b) => ({
                   key: b.key,
                   label: b.label,
@@ -397,11 +430,14 @@ export function AnalyticsPage() {
           <Card>
             <CardHeader>
               <CardTitle>Worst symbols</CardTitle>
-              <CardDescription>{basis} P&L · trade count</CardDescription>
+              <CardDescription>
+                {basis} P&L · trade count · click for the symbol's page
+              </CardDescription>
             </CardHeader>
             <CardContent>
               <HBarList
                 signed
+                onSelect={(it) => navigate(symbolPath(it.key))}
                 items={bottom.map((b) => ({
                   key: b.key,
                   label: b.label,
@@ -414,61 +450,5 @@ export function AnalyticsPage() {
         </div>
       </section>
     </div>
-  )
-}
-
-function BucketTable({ buckets, basis }: { buckets: Bucket[]; basis: PnlBasis }) {
-  if (!buckets.length)
-    return <div className="py-8 text-center text-sm text-muted-foreground">No trades</div>
-  return (
-    <Table>
-      <THead>
-        <TR className="hover:bg-transparent">
-          <TH />
-          <TH className="text-right">Trades</TH>
-          <TH className="text-right">Win rate</TH>
-          <TH className="text-right">Gross</TH>
-          <TH className="text-right">Costs</TH>
-          <TH className="text-right">Net</TH>
-          <TH className="text-right">Avg / trade</TH>
-          <TH className="text-right">Avg hold</TH>
-        </TR>
-      </THead>
-      <TBody>
-        {buckets.map((b) => {
-          const s = computeSummary(b.trades, basis)
-          return (
-            <TR key={b.key} className="hover:bg-transparent">
-              <TD className="font-medium">{b.label}</TD>
-              <TD className="text-right tabular">{fmtNumber(b.count)}</TD>
-              <TD className="text-right tabular">{fmtPct(b.winRate, 0)}</TD>
-              <TD
-                className={cn(
-                  'text-right tabular',
-                  basis === 'gross' ? pnlClass(b.grossPnl) : 'text-muted-foreground',
-                )}
-              >
-                {fmtMoney(b.grossPnl, { sign: true })}
-              </TD>
-              <TD className="text-right tabular text-muted-foreground">{fmtMoney(b.fees)}</TD>
-              <TD
-                className={cn(
-                  'text-right tabular font-medium',
-                  basis === 'net' ? pnlClass(b.netPnl) : 'text-muted-foreground',
-                )}
-              >
-                {fmtMoney(b.netPnl, { sign: true })}
-              </TD>
-              <TD className={cn('text-right tabular', pnlClass(s.expectancy))}>
-                {fmtMoney(s.expectancy, { sign: true })}
-              </TD>
-              <TD className="text-right tabular text-muted-foreground">
-                {fmtDuration(s.avgHoldMs)}
-              </TD>
-            </TR>
-          )
-        })}
-      </TBody>
-    </Table>
   )
 }

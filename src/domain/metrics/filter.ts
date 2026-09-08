@@ -9,11 +9,16 @@ export interface TradeFilter {
   status?: TradeStatus
   /** 'day' = closed same day, 'swing' = held overnight */
   holdType?: 'day' | 'swing'
+  /** Keep trades carrying at least one of these tags. */
+  tags?: string[]
+  /** Keep only trades with no tags at all (ignored when `tags` is set). */
+  untagged?: boolean
 }
 
 export function filterTrades(trades: Trade[], f?: TradeFilter): Trade[] {
   if (!f) return trades
   const symbols = f.symbols && f.symbols.length ? new Set(f.symbols) : undefined
+  const tags = f.tags && f.tags.length ? new Set(f.tags) : undefined
   return trades.filter((t) => {
     const d = attributionDate(t)
     if (f.from && d < f.from) return false
@@ -23,6 +28,9 @@ export function filterTrades(trades: Trade[], f?: TradeFilter): Trade[] {
     if (symbols && !symbols.has(t.symbol)) return false
     if (f.holdType === 'day' && t.isOvernight) return false
     if (f.holdType === 'swing' && !t.isOvernight) return false
+    if (tags) {
+      if (!t.tags?.some((x) => tags.has(x))) return false
+    } else if (f.untagged && t.tags?.length) return false
     return true
   })
 }

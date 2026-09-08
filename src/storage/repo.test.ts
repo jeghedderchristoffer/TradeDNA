@@ -15,6 +15,7 @@ import {
   getSettings,
   partitionByExisting,
   restoreBackup,
+  saveTradeNote,
   setSetting,
 } from './repo'
 
@@ -91,19 +92,38 @@ describe('storage repo', () => {
     await commitImport(meta('c1', 'cash'), { cashEntries: cash }, db)
     await setSetting('pnlBasis', 'gross', db)
 
+    await saveTradeNote('t_abc', { tags: ['FOMO', 'fomo'], note: 'chased' }, db)
+
     const text = JSON.stringify(await buildBackup(db))
     const parsed = parseBackup(text)
     expect(parsed.ok).toBe(true)
     if (!parsed.ok) return
-    expect(parsed.backup.schemaVersion).toBe(2)
+    expect(parsed.backup.schemaVersion).toBe(3)
     expect(parsed.backup.executions).toHaveLength(500)
     expect(parsed.backup.cashEntries).toHaveLength(100)
+    expect(parsed.backup.tradeNotes).toEqual([
+      { tradeId: 't_abc', tags: ['fomo'], note: 'chased', updatedAt: expect.any(Number) },
+    ])
     expect(parsed.backup.settings.pnlBasis).toBe('gross')
 
     const db2 = new TradeDnaDb('test-restore-merge')
     const r = await restoreBackup(parsed.backup, 'merge', db2)
     expect(r.added).toBe(600)
     expect((await getSettings(db2)).pnlBasis).toBe('gross')
+    expect((await db2.tradeNotes.get('t_abc'))?.note).toBe('chased')
+
+    // merge keeps the newer edit on either side
+    await db2.tradeNotes.put({
+      tradeId: 't_abc',
+      tags: [],
+      note: 'newer',
+      updatedAt: Date.now() + 1,
+    })
+    await restoreBackup(parsed.backup, 'merge', db2)
+    expect((await db2.tradeNotes.get('t_abc'))?.note).toBe('newer')
+    await db2.tradeNotes.put({ tradeId: 't_abc', tags: [], note: 'older', updatedAt: 1 })
+    await restoreBackup(parsed.backup, 'merge', db2)
+    expect((await db2.tradeNotes.get('t_abc'))?.note).toBe('chased')
 
     const r2 = await restoreBackup(parsed.backup, 'merge', db2)
     expect(r2.added).toBe(0)
@@ -114,9 +134,24 @@ describe('storage repo', () => {
       .parse(rows.slice(0, 5), { importBatchId: 'zz' })
       .executions.map((e) => ({ ...e, id: `other-${e.id}` }))
     await commitImport(meta('zz'), { executions: other }, db3)
+    await saveTradeNote('t_gone', { tags: ['x'], note: '' }, db3)
     await restoreBackup(parsed.backup, 'replace', db3)
     expect(await db3.executions.count()).toBe(500)
     expect(await db3.executions.get(`other-${all[0]!.id}`)).toBeUndefined()
+    expect(await db3.tradeNotes.get('t_gone')).toBeUndefined()
+    expect(await db3.tradeNotes.count()).toBe(1)
+  })
+
+  it('saves, normalizes and deletes trade notes', async () => {
+    const saved = await saveTradeNote('t_1', { tags: [' A+ Setup', 'a+ setup', ''], note: 'x' }, db)
+    expect(saved?.tags).toEqual(['a+ setup'])
+    expect((await db.tradeNotes.get('t_1'))?.note).toBe('x')
+    // emptying both fields removes the row instead of storing an empty note
+    expect(await saveTradeNote('t_1', { tags: [], note: '   ' }, db)).toBeUndefined()
+    expect(await db.tradeNotes.get('t_1')).toBeUndefined()
+    // a v2 backup without notes still parses
+    const v2 = parseBackup('{"app":"tradedna","schemaVersion":2,"exportedAt":"x","executions":[]}')
+    expect(v2.ok && v2.backup.tradeNotes).toEqual([])
   })
 
   it('accepts a v1 backup without cash entries', () => {
@@ -159,10 +194,12 @@ describe('storage repo', () => {
     const a = tradezero.parse(rows.slice(0, 10), { importBatchId: 'b1' }).executions
     await commitImport(meta('b1'), { executions: a }, db)
     await setSetting('theme', 'dark', db)
+    await saveTradeNote('t_1', { tags: ['a'], note: '' }, db)
     await clearAllData(db)
     expect(await db.executions.count()).toBe(0)
     expect(await db.cashEntries.count()).toBe(0)
     expect(await db.importBatches.count()).toBe(0)
+    expect(await db.tradeNotes.count()).toBe(0)
     expect((await getSettings(db)).theme).toBe('system')
   })
 })
